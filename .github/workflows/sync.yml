@@ -1,0 +1,39 @@
+name: Sync SpaceCatX Posts
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 16 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests markdownify
+
+      - name: Fetch posts from WordPress
+        run: python scripts/fetch_posts.py
+
+      - name: Commit and push if there are changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts raw index.json
+          if git diff --cached --quiet; then
+            echo "변경 사항 없음, 커밋 생략"
+          else
+            git commit -m "Sync posts: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
