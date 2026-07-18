@@ -13,6 +13,7 @@ SpaceCatX WordPress 글 동기화 스크립트
 import json
 import os
 import re
+import time
 from html import unescape
 
 import requests
@@ -23,11 +24,43 @@ POSTS_DIR = "posts"
 RAW_DIR = "raw"
 INDEX_FILE = "index.json"
 PER_PAGE = 100
+MAX_RETRIES = 4
+
+# 기본 python-requests User-Agent는 일부 호스팅/보안 설정에서 봇으로 인식되어
+# 응답이 아예 안 오고(hang) 타임아웃만 나는 경우가 있어, 브라우저처럼 보이는
+# User-Agent를 명시적으로 지정한다.
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
+}
 
 
 def strip_html(html_text: str) -> str:
     """excerpt 등 짧은 HTML에서 태그만 제거."""
     return unescape(re.sub(r"<[^<]+?>", "", html_text)).strip()
+
+
+def request_with_retry(url, params):
+    """타임아웃/일시적 오류에 대비해 지수 백오프로 재시도."""
+    last_error = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            return requests.get(
+                url,
+                params=params,
+                headers=HEADERS,
+                timeout=(10, 45),  # (연결 타임아웃, 응답 대기 타임아웃)
+            )
+        except requests.exceptions.RequestException as e:
+            last_error = e
+            wait = 2 ** attempt  # 2, 4, 8, 16초
+            print(f"요청 실패 ({attempt}/{MAX_RETRIES}): {e} — {wait}초 후 재시도")
+            time.sleep(wait)
+    raise last_error
 
 
 def fetch_all_posts():
@@ -36,7 +69,7 @@ def fetch_all_posts():
     page = 1
 
     while True:
-        resp = requests.get(
+        resp = request_with_retry(
             BASE_URL,
             params={
                 "per_page": PER_PAGE,
@@ -45,9 +78,9 @@ def fetch_all_posts():
                 "orderby": "id",
                 "order": "asc",
             },
-            timeout=30,
         )
 
+        # 마지막 페이지를 넘어가면 WP가 400을 반환하는 경우가 있어 안전하게 종료
         if resp.status_code == 400:
             break
         resp.raise_for_status()
@@ -76,9 +109,11 @@ def save_post(post: dict) -> dict:
     excerpt = strip_html(post.get("excerpt", {}).get("rendered", ""))
     content_html = post["content"]["rendered"]
 
+    # raw HTML 원본 저장
     with open(os.path.join(RAW_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
         f.write(content_html)
 
+    # Markdown 변환 (AI 열람용)
     content_md = md(content_html, heading_style="ATX")
     md_output = (
         f"# {title}\n\n"
@@ -110,6 +145,7 @@ def main():
     posts = fetch_all_posts()
 
     index = [save_post(post) for post in posts]
+    # 최신 발행일 순으로 정렬해두면 index.json 훑어볼 때 편함
     index.sort(key=lambda p: p["published"], reverse=True)
 
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
