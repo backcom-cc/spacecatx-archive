@@ -2,7 +2,7 @@
 
 - URL: https://spacecatx.me/chatgpt-slow-fix/
 - Published: 2026-04-22T20:14:00
-- Modified: 2026-05-02T19:00:46
+- Modified: 2026-07-18T16:42:55
 
 ---
 
@@ -108,10 +108,7 @@
 
 ```
 챗지피티 페이지 열기
-→ F12
-→ Application
-→ Storage
-→ Clear site data
+F12 > 애플리케이션 > 저장용량 > 저장용량 지우기
 ```
 
 이건 챗지피티 사이트 기준으로 저장된 데이터만 정리하는 작업이라, 세션이 이상하게 꼬였을 때 한 번 해볼 만합니다.
