@@ -1,0 +1,248 @@
+
+<p>갤럭시북(삼성 노트북) 사용자 중에서 윈도우 11 업데이트 이후 <strong>“C:\ 드라이브에 액세스할 수 없습니다”</strong>, <strong>“액세스가 거부되었습니다”</strong> 같은 메시지가 뜨는 경우가 생겼죠? 많이 답답한 상황입니다ㅠㅠ</p>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h5 class="wp-block-heading">일반적인 업데이트 실패 이슈부터 보고 싶다면 아래 글을 먼저 보세요.<br><strong>👉 <a href="https://spacecatx.me/windows11-kb5079473-update-failed-c-drive-access-denied/" target="_blank" rel="noreferrer noopener">윈도우11 KB5079473 설치 안됨? 업데이트 실패·C드라이브 접근 불가 이슈 정리(for 갤럭시북)</a></strong></h5>
+</div></div>
+
+
+
+<p>그런데 위 글에서 정리한 방법도 해봤고, Microsoft 공식 복구 단계까지 봤는데도 안 된다면 이 글은 <strong>갤럭시북 사용자를 위한 후속 해결 글</strong>입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">이건 일반 업데이트 오류랑 조금 다릅니다</h3>
+
+
+
+<p>이번 문제는 그냥 “업데이트가 실패했다” 수준에서 끝나는 게 아니라, <strong>Samsung Galaxy Connect</strong> 또는 <strong>Samsung Continuity Service</strong> 때문에 C드라이브 권한이 꼬여버리는 쪽에 더 가깝습니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>즉, 갤럭시북에서 이 증상이 뜬다면 흔한 윈도우 업데이트 오류가 아니라 삼성 앱 충돌로 C드라이브 권한이 손상된 케이스일 수 있습니다.</p>
+</blockquote>
+
+
+
+<p>그래서 다른 PC에서 통하던 평범한 해결법이 여기서는 잘 안 먹히는 거예요. 업데이트가 문제라기보다, 권한 자체가 망가진 상태니까요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">시작 전에 먼저 할 것</h3>
+
+
+
+<p>본격적으로 복구하기 전에 일단 문제를 다시 키울 만한 것부터 막아야 합니다. 괜히 고쳐놓고 또 꼬이면 진짜 혈압 오르거든요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Microsoft Store에서 <strong>앱 자동 업데이트 끄기</strong></li>
+
+
+
+<li><strong>Samsung Galaxy Connect / Samsung Continuity Service 삭제</strong></li>
+
+
+
+<li>가능하면 <strong>재부팅</strong></li>
+
+
+
+<li>클릭이 잘 안 되면 <strong>안전 모드에서 진행</strong></li>
+
+
+
+<li></li>
+</ul>
+
+
+
+<p>핵심은 간단합니다. <strong>범인 후보 앱을 그대로 둔 채 복구만 하면 다시 잠길 수 있다</strong>는 거예요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">Microsoft 공식 복구 방법은 여기서 보세요</h3>
+
+
+
+<p>Microsoft도 이 문제를 공식적으로 안내하고 있습니다. 다만 절차가 생각보다 길고, 따라가다 보면 중간에 지치는 사람도 많아요.</p>
+
+
+
+<h5 class="wp-block-heading">공식 복구 단계는 아래 링크에서 확인할 수 있습니다.<br><strong>👉 <a href="https://support.microsoft.com/ko-kr/topic/%EB%B3%B5%EA%B5%AC-%EB%8B%A8%EA%B3%84-samsung-galaxy-connect-%EB%98%90%EB%8A%94-samsung-continuity-service%EB%8A%94-c-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%97%90-%EB%8C%80%ED%95%9C-%EC%95%A1%EC%84%B8%EC%8A%A4-%EA%B6%8C%ED%95%9C%EC%9D%84-%EC%83%81%EC%8B%A4%ED%95%A0-%EC%88%98-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-48c242aa-242a-4ddd-a9ad-98ea25fc04c1" target="_blank" rel="noreferrer noopener">Microsoft 공식 복구 단계 보기</a></strong></h5>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>공식 절차는 정석이긴 한데, 단계가 많고 이미 C드라이브 권한이 심하게 꼬인 경우에는 솔직히 따라가기도 꽤 번거롭습니다.</p>
+</blockquote>
+
+
+
+<p>그래서 아래에는 <strong>공식 방법으로도 잘 안 풀릴 때 시도할 수 있는 파훼법</strong>만 따로 정리할게요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">공식 방법으로도 안 되면: CMD로 권한 강제 탈환</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>여기서부터는 조금 더 강한 방법입니다. 가능하면 <strong>안전 모드</strong>에서, 그리고 반드시 <strong>관리자 권한 CMD</strong>로 실행하세요.<br>(※ 지금 이 장애로 안전모드가 안 들어가진다면 전원 버튼으로<strong> 강제 종료 → 부팅 </strong>중 다시 강제 종료를 2~3회 반복하면 자동으로 복구 화면(WinRE)으로 진입할 수 있습니다. 여기서<strong> 문제 해결 → 고급 옵션 → 시작</strong> 설정으로 들어가면 됩니다.)</p>
+</blockquote>
+
+
+
+<pre class="wp-block-code"><code>takeown /f C:\ /r /d y
+icacls C:\ /grant Administrators:F /t /c /l
+icacls C:\ /reset /t /c /l</code></pre>
+
+
+
+<p>각 명령어 역할은 대충 이렇습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>takeown</code> : C드라이브 소유권을 다시 가져옵니다.</li>
+
+
+
+<li><code>icacls /grant</code> : 관리자 권한을 다시 부여합니다.</li>
+
+
+
+<li><code>icacls /reset</code> : 꼬인 권한을 기본값 기준으로 다시 맞춥니다.</li>
+</ul>
+
+
+
+<p>쉽게 말하면 이건 <strong>“권한이 꼬여서 문이 안 열리면, 문고리부터 다시 갈아끼우는 방식”</strong>에 가깝습니다. 조금 거칠지만, 이미 상태가 크게 망가졌다면 이쪽이 더 잘 통할 때가 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">왜 .bat 파일보다 직접 입력이 더 현실적일 때가 있냐면</h3>
+
+
+
+<p>이 문제는 참 아이러니합니다. 원래는 배치 파일 하나로 자동 실행시키면 편하겠죠. 그런데 정작 <strong>C드라이브가 막힌 사람은 파일 다운로드나 실행 자체가 안 되는 경우</strong>가 있습니다. 아, 진짜 속 타는 오류입니다!!</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>그러니까 파일로 주는 게 더 편하겠지만, 막상 이 문제를 겪는 사람한테는 오히려 <strong>명령어 직접 입력</strong>이 더 현실적인 해결책일 수 있습니다.</p>
+</blockquote>
+
+
+
+<p>괜히 복잡하게 굴자는 게 아니라, 지금 상황에서는 그게 더 빨라요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">짧은 주의사항</h3>
+
+
+
+<ul class="wp-block-list">
+<li>실행 중 일부 파일에서 <strong>“액세스 거부”</strong>가 떠도 끝까지 기다려보세요.</li>
+
+
+
+<li>파일 수가 많으면 시간이 꽤 걸릴 수 있습니다.</li>
+
+
+
+<li><code>icacls /reset</code>은 강한 방식이라 일부 프로그램 권한이나 설정이 다시 잡힐 수 있습니다.</li>
+</ul>
+
+
+
+<p>즉, 이 방법은 “가볍게 한번 눌러보는 팁”이 아니라 <strong>진짜 막혔을 때 쓰는 복구용 방법</strong>이라고 생각하면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">그래도 안 되면</h3>
+
+
+
+<p>여기까지 했는데도 해결되지 않는다면, 권한 문제를 넘어서 시스템 자체가 더 깊게 꼬였을 가능성도 있습니다.</p>
+
+
+
+<h5 class="wp-block-heading">그럴 때는 포맷 없이 윈도우를 복구하는 <strong>인플레이스 업그레이드</strong>까지 봐야 합니다. 아래 글 참고하세요.<br><strong>👉  <a href="https://spacecatx.me/windows11-inplace-upgrade-fix-update-error/" target="_blank" rel="noreferrer noopener">윈도우11 업데이트 오류 계속될 때 최후 해결법 (포맷 없이 복구) 아직 포맷은 일러요!</a></strong></h5>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">마지막으로, 이번 일 겪고 나면 하나쯤은 챙겨두는 게 좋습니다</h3>
+
+
+
+<p>이번 케이스처럼 C드라이브 자체 접근이 막히는 문제는 겪어보면 진짜 무섭습니다. 사진, 문서, 작업 파일은 평소엔 당연하게 거기 있을 것 같지만, 한 번 꼬이면 순식간에 식은땀 나는 상황이 와요.</p>
+
+
+
+<p>이번에 겨우 살렸다고 끝이 아니라, 적어도 중요한 파일은 따로 빼둘 수 있게 <strong>외장하드나 외장 SSD 하나 정도는 미리 준비해두는 편이 훨씬 마음 편합니다.</strong> (빠르게 작업하고 바로 백업까지 같이 쓰려면 SSD, 가격 부담 줄이고 용량 위주로 보관용이면 HDD 쪽이 맞습니다.)</p>
+
+
+
+<p><br><strong><a href="https://link.coupang.com/a/ea1aH8" target="_blank" rel="noopener">👉 쿠팡 삼성전자 포터블 외장 SSD T7 쉴드 USB 3.2</a></strong></p>
+
+
+
+<a href="https://link.coupang.com/a/ea1dcN" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img4a.coupangcdn.com/image/affiliate/banner/6c544c15c01c27961a4ab484eec80302@2x.jpg" alt="삼성전자 포터블 외장 SSD T7 쉴드 USB 3.2, 블랙, 2TB" width="120" height="240"></a>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://link.coupang.com/a/ea1gqL" target="_blank" rel="noopener"><strong><strong>👉</strong></strong> <strong>씨게이트 One Touch HDD 외장하드STKY1000401&nbsp;</strong></a></p>
+
+
+
+<a href="https://link.coupang.com/a/ea1g76" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img2a.coupangcdn.com/image/affiliate/banner/09a8509fcba1979f895edcc980ee90c4@2x.jpg" alt="씨게이트 One Touch HDD 외장하드STKY1000401 데이터복구+암호화 기능+파우치+USB케이블, 1TB, 실버" width="120" height="240"></a>
+
+
+
+<p>&#8220;이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>

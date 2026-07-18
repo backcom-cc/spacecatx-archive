@@ -1,0 +1,245 @@
+# 해외직구 영양제, 그냥 결제했다가 통관에서 멈추면 돈만 묶여요(멜라토닌, 다이어트, 덱사메타손)
+
+- URL: https://spacecatx.me/overseas-supplements-customs-limit-2026/
+- Published: 2026-02-17T13:46:11
+- Modified: 2026-05-05T20:33:42
+
+---
+
+## 해외직구 영양제, 그냥 결제했다가 통관에서 멈출 수 있습니다
+
+건강 챙기려고 해외직구 영양제를 샀는데 통관에서 멈추면, 그 순간부터 머리가 복잡해집니다.
+
+해외에서는 건강보조식품으로 팔리는 제품이라도, 국내 통관 기준에서는 의약품 성분이나 국내 반입차단 성분으로 볼 수 있기 때문입니다.
+
+**해외직구 영양제 통관**은 자가사용 목적이라도 무조건 안심할 수 없습니다. 수량 제한이 있고, 성분에 따라 통관 보류·반송·폐기까지 이어질 수 있습니다.
+
+특히 수면, 다이어트, 운동 보조, 남성 활력, 집중력 개선처럼 효과가 강하게 느껴지는 제품은 결제 전에 성분표부터 확인하는 게 좋습니다.
+
+---
+
+## 먼저 수량부터 확인하세요: 보통 6병 이하가 기준입니다
+
+건강기능식품을 개인이 자가소비 목적으로 해외직구하는 경우, 1회 반입 시 1인당 6병 이하와 미화 150달러 이하 범위에서 면세통관 및 수입요건 확인 면제가 적용될 수 있습니다. 이를 초과하면 국내 의사 소견서 등이 필요할 수 있습니다. :contentReference[oaicite:1]{index=1}
+
+즉, 영양제는 “싸니까 여러 병 사야지”가 위험할 수 있습니다. 같은 제품을 여러 개 담거나, 여러 영양제를 한 번에 많이 주문하면 자가사용 범위 초과로 확인 대상이 될 수 있습니다.
+
+* 같은 제품을 여러 병 주문한 경우
+* 여러 종류 영양제를 합쳐 6병을 넘긴 경우
+* 반복적으로 같은 제품을 자주 주문한 경우
+* 판매 목적처럼 보일 정도로 수량이 많은 경우
+
+수량 초과는 성분 문제가 없어도 통관에서 멈추는 원인이 될 수 있습니다.
+
+---
+
+## 통관에서 자주 문제가 되는 성분 유형
+
+모든 영양제가 막히는 것은 아닙니다. 하지만 아래 유형은 해외직구에서 특히 조심해야 합니다.
+
+### 1. 수면 보조 제품: 멜라토닌, 5-HTP 계열
+
+대표적으로 많이 걸리는 것이 수면 보조 제품입니다. 해외에서는 멜라토닌이 일반 수면 보조제로 팔리지만, 국내에서는 개인이 해외직구나 자가수입을 할 때 의사 소견서 등을 제출해야 통관이 허용될 수 있다고 안내되어 있습니다. :contentReference[oaicite:2]{index=2}
+
+식약처의 국내 반입차단 대상 원료·성분 예시에도 멜라토닌과 5-하이드록시트립토판이 포함되어 있습니다. :contentReference[oaicite:3]{index=3}
+
+* Melatonin
+* 5-HTP
+* 5-hydroxytryptophan
+* Griffonia simplicifolia seed extract
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* 수면 보조제
+* Sleep support 제품
+* Relaxation supplement
+* 시차 적응용 보조제
+* 스트레스 완화·기분 안정 제품
+
+제품명에 Sleep, Rest, Night, Relax, Mood 같은 단어가 있으면 성분표를 더 꼼꼼히 보는 게 좋습니다.
+
+### 2. 다이어트·각성 제품: 에페드린, DMAA, 요힘빈 계열
+
+다이어트, 운동 전 각성, 에너지 부스터 계열도 통관 변수에 자주 걸릴 수 있습니다. 식약처가 예시로 든 국내 반입차단 대상 성분에는 에페드린이 포함되어 있고, 과거 수입금지 성분 목록에는 1,3-DMAA, 요힘빈, 에보디아민 같은 성분도 확인됩니다. :contentReference[oaicite:4]{index=4}
+
+* Ephedrine
+* DMAA
+* 1,3-Dimethylamylamine
+* Yohimbine
+* Yohimbe bark extract
+* Evodiamine
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* 다이어트 보조제
+* Fat burner
+* Thermogenic 제품
+* Pre-workout 부스터
+* Energy booster
+* 운동 전 집중력·각성 제품
+
+제품명에 Fat Burner, Thermo, Extreme, Shred, Pump, Pre-workout 같은 단어가 있으면 성분표를 꼭 확인하세요.
+
+### 3. 남성 활력·성기능 제품: 실데나필 유사 성분
+
+남성 활력, 스태미나, 성기능 개선을 강조하는 제품도 조심해야 합니다. 식약처 예시에는 실데나필이 국내 반입차단 대상 성분에 포함되어 있습니다. :contentReference[oaicite:5]{index=5}
+
+* Sildenafil
+* Tadalafil
+* Vardenafil
+* 성기능 개선 관련 유사물질
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* 남성 활력 보조제
+* Male enhancement
+* Libido support
+* Stamina supplement
+* Herbal vitality 제품
+
+특히 “천연 성분”이라고 광고해도 실제로는 의약품 유사 성분이 검출되는 사례가 있어 주의해야 합니다.
+
+### 4. 집중력·기억력 제품: 빈포세틴, 피라세탐 계열
+
+집중력, 기억력, 두뇌 건강을 강조하는 제품도 성분을 확인해야 합니다. 식약처 예시에는 빈포세틴이 국내 반입차단 대상 성분에 포함되어 있습니다. :contentReference[oaicite:6]{index=6}
+
+* Vinpocetine
+* Piracetam
+* Noopept
+* 기타 nootropic 계열 성분
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* Nootropic 제품
+* Brain support
+* Focus supplement
+* Memory support
+* Study supplement
+
+제품명에 Brain, Focus, Memory, Nootropic, Cognitive 같은 단어가 있으면 성분표를 한 번 더 확인하세요.
+
+### 5. 호르몬·근육 강화 제품: DHEA, 프로호르몬 계열
+
+근육 강화, 호르몬 조절, 항노화 효과를 강조하는 제품도 통관에서 문제가 될 수 있습니다. 해외에서는 보충제로 판매되더라도 국내 기준에서는 의약품 성격으로 볼 수 있는 성분이 들어갈 수 있습니다.
+
+* DHEA
+* Pregnenolone
+* Androstenedione
+* Prohormone 계열 성분
+* SARMs 계열 성분
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* 근육 강화 보조제
+* Testosterone booster
+* Hormone support
+* Anti-aging supplement
+* Bodybuilding supplement
+
+Testosterone, Hormone, Anabolic, Prohormone 같은 표현이 보이면 특히 조심하세요.
+
+### 6. 스테로이드·염증 개선 강조 제품: 덱사메타손 등
+
+피부, 관절, 염증, 통증 완화를 강하게 강조하는 제품도 주의해야 합니다. 식약처 예시에는 덱사메타손이 국내 반입차단 대상 성분에 포함되어 있습니다. :contentReference[oaicite:7]{index=7}
+
+* Dexamethasone
+* Steroid 계열 성분
+* 의약품성 소염·진통 성분
+
+들어가기 쉬운 제품은 이런 쪽입니다.
+
+* 관절 통증 완화 제품
+* 염증 개선 보조제
+* 피부질환 개선을 강조하는 제품
+* Pain relief supplement
+* Anti-inflammatory 제품
+
+식품이나 영양제처럼 보이지만 치료, 염증 개선, 통증 완화 표현이 강하면 성분 확인이 필요합니다.
+
+---
+
+## 성분표에서 이런 단어가 보이면 한 번 멈추세요
+
+성분표를 볼 때는 한글 제품명보다 영어 성분명을 보는 것이 더 중요합니다. 아래 단어가 보이면 바로 결제하지 말고 검색해보세요.
+
+| 제품 유형 | 주의 키워드 | 들어가기 쉬운 제품 |
+| --- | --- | --- |
+| 수면 보조 | Melatonin, 5-HTP | Sleep, Rest, Relax 제품 |
+| 다이어트·각성 | Ephedrine, DMAA, Yohimbine | Fat burner, Pre-workout |
+| 남성 활력 | Sildenafil, Tadalafil | Male enhancement, Libido |
+| 집중력·기억력 | Vinpocetine, Piracetam | Nootropic, Brain support |
+| 호르몬·근육 | DHEA, Prohormone, SARMs | Testosterone booster |
+| 염증·통증 | Dexamethasone, Steroid | Pain relief, Anti-inflammatory |
+
+이 표는 대표적인 예시입니다. 실제 국내 반입차단 성분 목록은 계속 바뀔 수 있으니, 결제 전에는 최신 목록을 확인하는 것이 안전합니다.
+
+---
+
+## 결제 전 확인해야 할 것
+
+해외직구 영양제는 결제 후 문제가 생기면 대응이 피곤합니다. 그래서 결제 전에 아래 네 가지를 먼저 확인하세요.
+
+1. 성분표 전체를 확인합니다.
+2. 함량까지 확인합니다.
+3. 주문 수량이 자가사용 범위인지 확인합니다.
+4. 제품명과 성분명으로 통관 사례를 검색합니다.
+
+특히 “국내에서도 많이 먹는 성분이겠지”라고 넘기면 안 됩니다. 해외 판매 기준과 국내 통관 기준은 다를 수 있습니다.
+
+식약처는 국민건강 위해 우려가 있는 해외직구식품 원료·성분을 국내 반입차단 대상으로 지정하고, 해당 성분이 확인된 식품은 해외직구 위해식품 차단목록에 등재하며 관세청 통관보류 등의 조치를 한다고 설명합니다. :contentReference[oaicite:8]{index=8}
+
+최신 차단 원료·성분은 식약처 수입식품정보마루의 해외직구식품 안전정보에서 확인할 수 있습니다.
+
+[식약처 수입식품정보마루 해외직구식품 안전정보](https://impfood.mfds.go.kr/CFCBB03F02/getCntntsDetail?cntntsSn=522053&cntntsView=list&limit=10&page=1&searchCondition=&searchInpText=)
+
+---
+
+## 통관에서 멈추면 어떻게 되나요?
+
+통관에서 멈췄다고 해서 무조건 폐기되는 것은 아닙니다. 단순 확인 후 통과되는 경우도 있고, 추가 자료를 요청받을 수도 있습니다.
+
+하지만 성분 자체가 국내 반입차단 대상이거나 의사 소견서 등 필요한 자료가 없으면 반송 또는 폐기 절차로 이어질 수 있습니다.
+
+* 성분 확인
+* 수량 확인
+* 의사 소견서 등 자료 요청
+* 반송 안내
+* 폐기 안내
+
+이때 판매처가 환불을 바로 해주는 것도 아닐 수 있습니다. 통관 문제는 구매자 책임으로 보는 해외 쇼핑몰도 많기 때문에, 결제 전 확인이 가장 중요합니다.
+
+---
+
+## 정리
+
+해외직구 영양제는 자가사용 목적이라도 수량과 성분에 따라 통관에서 멈출 수 있습니다.
+
+* 보통 자가소비 목적은 1회 1인당 6병 이하 기준을 먼저 확인합니다.
+* 수면 보조제는 멜라토닌, 5-HTP 계열을 확인합니다.
+* 다이어트·운동 부스터는 에페드린, DMAA, 요힘빈 계열을 확인합니다.
+* 남성 활력 제품은 실데나필 유사 성분을 조심합니다.
+* 집중력·두뇌 보조 제품은 빈포세틴 등 nootropic 성분을 확인합니다.
+* 호르몬·근육 강화 제품은 DHEA, 프로호르몬, SARMs 계열을 조심합니다.
+* 최신 반입차단 성분은 식약처 해외직구식품 안전정보에서 확인합니다.
+
+**해외직구 영양제 통관이 걱정된다면 결제 전에 제품명보다 성분표를 먼저 보세요. 특히 수면, 다이어트, 운동 부스터, 남성 활력, 호르몬, 집중력 제품은 통관 변수에 걸릴 수 있는 성분이 들어가기 쉽습니다.**
+
+건강 챙기려고 산 제품이 돈 묶이고 스트레스가 되는 상황으로 바뀌지 않으려면, 장바구니에 담기 전에 성분표부터 확인하는 습관이 필요합니다.
+
+---
+
+##### 해외직구에 대해 더 궁금하신게 있으시다면
+
+> [알리 5일 배송 믿었는데 아직도 출고 준비중? 기다릴지 환불할지 판단하는 기준](https://spacecatx.me/aliexpress-5day-shipping-delay-dispute-guide/)
+
+[개인통관고유부호 도용 문자 받았어요? 해킹인가요? (대처 방법)](https://spacecatx.me/personal-customs-code-theft-text/)
+
+[잘 쓰던 통관번호가 갑자기 안 먹힌다고요? 2026년부터 조용히 바뀐 ‘1년 만료’의 진실](https://spacecatx.me/pccc-expired-renewal-2026/)
+
+[알리·테무 직구, 가품으로 세관에서 폐기될 수 있습니다!관세청 통계로 보는 해외직구 위조품 실태](https://spacecatx.me/aliexpress-temu-counterfeit-customs/)
+
+[왜 내 택배만 인천세관에서 멈출까? 통관 진행중 블랙홀의 진짜 이유](https://spacecatx.me/incheon-customs-clearance-hold-2026/)
+
+[해외직구 영양제, 그냥 결제했다가 통관에서 멈추면 돈만 묶여요](https://spacecatx.me/overseas-supplements-customs-limit-2026/)
+
+[배대지에서 “통관 불가” 연락이 왔어요. 폐기? 반품?](https://spacecatx.me/overseas-shopping-customs-refused-return-guide/)

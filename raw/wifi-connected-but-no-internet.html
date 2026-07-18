@@ -1,0 +1,488 @@
+
+<h2 class="wp-block-heading">와이파이 연결됐는데 인터넷 안됨? 원인별 해결 순서 정리</h2>
+
+
+
+<p>와이파이 연결됐는데 인터넷이 안 되는 상황, 한 번씩은 다 겪어봤을 거예요.</p>
+
+
+
+<p>와이파이를 껐다 켜보고, 공유기도 재부팅해봤는데 계속 안 되면 “아 이거 고장났나?” 싶어집니다. 괜히 설정 이것저것 건드리다가 오히려 더 꼬일 때도 있고요.</p>
+
+
+
+<p>저도 한 번은 노트북만 유독 인터넷이 안 돼서 공유기 탓만 했는데, 알고 보니 컴퓨터에 쌓인 DNS 캐시가 꼬인 상태였습니다. 명령어 하나 입력하니까 바로 해결됐고요. 공유기는 아무 잘못이 없었습니다.</p>
+
+
+
+<p>이 문제는 원인이 생각보다 여러 갈래라서 어디서부터 봐야 할지 막막한 게 제일 답답합니다. 공유기 문제인지, DNS 문제인지, 기기 설정이 꼬인 건지 아래에서 상황별로 정리했으니, 내 상황에 가까운 케이스부터 확인해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">먼저 내 상황부터 확인하세요</h2>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>상황</th><th>먼저 의심할 원인</th><th>먼저 볼 해결법</th></tr></thead><tbody><tr><td>내 휴대폰만 인터넷이 안 된다</td><td>기기 와이파이 설정 꼬임</td><td>와이파이 삭제 후 다시 연결</td></tr><tr><td>노트북만 인터넷이 안 된다</td><td>DNS 캐시, IP 할당, 네트워크 어댑터 문제</td><td>ipconfig /flushdns, IP 갱신</td></tr><tr><td>모든 기기에서 인터넷이 안 된다</td><td>공유기, 모뎀, 통신사 회선 문제</td><td>모뎀·공유기 상태등, WAN 포트 확인</td></tr><tr><td>일부 사이트만 안 열린다</td><td>DNS 문제 가능성</td><td>DNS 서버 변경</td></tr><tr><td>공용 와이파이에서 인터넷이 안 된다</td><td>로그인 페이지, 인증 만료, MAC 주소 문제</td><td>인증 페이지 확인, 기기 MAC 사용</td></tr><tr><td>와이파이는 잡히는데 ‘인터넷 없음’이 뜬다</td><td>공유기는 연결됐지만 외부 회선이 끊긴 상태</td><td>모뎀 연결, WAN 케이블, 통신사 장애 확인</td></tr><tr><td>연결은 되는데 자주 끊긴다</td><td>와이파이 대역, 거리, 간섭 문제</td><td>2.4GHz / 5GHz 대역 확인</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">1. 모든 기기에서 안 되면 모뎀과 공유기부터 확인하세요</h2>
+
+
+
+<p>휴대폰, 노트북, 태블릿이 모두 인터넷이 안 된다면 내 기기 문제가 아닐 가능성이 큽니다. 이때는 공유기, 모뎀, 통신사 회선 쪽을 먼저 봐야 해요.</p>
+
+
+
+<p>와이파이 신호는 공유기에서 나오지만, 실제 인터넷 회선은 모뎀이나 벽면 랜선을 통해 들어옵니다. 그래서 와이파이 표시가 떠 있어도 외부 인터넷 회선이 끊겨 있으면 인터넷은 안 됩니다.</p>
+
+
+
+<p>먼저 공유기와 모뎀 전원을 완전히 뽑고 30초 정도 기다렸다가 다시 연결하세요.<br>단순히 껐다 켜는 것보다, 장비가 연결 상태를 새로 잡을 시간을 주는 방식입니다.</p>
+
+
+
+<p>그리고 공유기 뒤쪽의 <strong>WAN</strong> 또는 <strong>Internet</strong> 포트에 꽂힌 랜선도 확인하세요.<br>이 선이 느슨하게 꽂혀 있거나 빠져 있으면 와이파이는 잡히는데 인터넷은 안 됩니다.<br>랜선을 한 번 완전히 뽑았다가, <strong>딸깍 소리가 나도록 끝까지 다시 꽂아보세요.</strong><br>겉으로는 꽂혀 있는 것처럼 보여도 접촉이 애매하면 인터넷 회선이 제대로 잡히지 않을 수 있습니다.</p>
+
+
+
+<p>확인할 것은 아래와 같습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>모뎀 전원이 정상인지</li>
+
+
+
+<li>공유기 전원이 정상인지</li>
+
+
+
+<li>WAN 또는 Internet 포트 랜선이 제대로 꽂혀 있는지</li>
+
+
+
+<li>랜선이 끝까지 들어갔는지</li>
+
+
+
+<li>통신사 장애 공지가 있는지</li>
+</ul>
+
+
+
+<p>와이파이가 연결됐다고 해서 인터넷 회선까지 정상이라는 뜻은 아닙니다. 공유기와 기기는 연결됐지만, 공유기 밖으로 나가는 회선이 끊겨 있을 수 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">2. 내 기기만 안 되면 와이파이를 삭제하고 다시 연결하세요</h2>
+
+
+
+<p>다른 기기에서는 인터넷이 잘 되는데 내 휴대폰이나 노트북에서만 안 된다면, 공유기보다 해당 기기의 와이파이 설정이 꼬였을 가능성이 큽니다.</p>
+
+
+
+<p>이때는 와이파이를 단순히 껐다 켜는 것보다, 저장된 와이파이 정보를 삭제한 뒤 다시 연결하는 게 더 확실합니다.</p>
+
+
+
+<h3 class="wp-block-heading">아이폰</h3>
+
+
+
+<pre class="wp-block-code"><code>설정 &gt; Wi-Fi &gt; 연결된 와이파이 오른쪽 i 버튼 &gt; 이 네트워크 지우기</code></pre>
+
+
+
+<p>그다음 다시 와이파이를 선택하고 비밀번호를 입력해 연결하세요.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">갤럭시</h3>
+
+
+
+<pre class="wp-block-code"><code>설정 &gt; 연결 &gt; Wi-Fi &gt; 연결된 와이파이 설정 &gt; 삭제 또는 네트워크 지우기</code></pre>
+
+
+
+<p>이후 다시 와이파이에 연결하면 됩니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">윈도우</h3>
+
+
+
+<p>설정 &gt; 네트워크 및 인터넷 &gt; Wi-Fi &gt; 알려진 네트워크 관리</p>
+
+
+
+<p>문제 있는 와이파이를 선택한 뒤 삭제하고 다시 연결하세요.</p>
+
+
+
+<p>이 방법은 와이파이 비밀번호가 바뀌었거나, 이전 연결 정보가 꼬였을 때 특히 효과가 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">3. PC만 안 되면 DNS 캐시와 IP를 새로 받아오세요</h2>
+
+
+
+<p>노트북이나 PC에서만 인터넷이 안 된다면 DNS 캐시나 IP 할당이 꼬였을 수 있습니다.</p>
+
+
+
+<p>이럴 때는 명령 프롬프트에서 DNS 캐시를 지우고, IP 주소를 새로 받아오면 해결되는 경우가 있어요.</p>
+
+
+
+<p>윈도우 검색창에 <strong>cmd</strong>를 입력한 뒤 <strong>관리자 권한으로 실행</strong>하세요. 그리고 아래 명령어를 순서대로 입력합니다.</p>
+
+
+
+<pre class="wp-block-code"><code>ipconfig /flushdns
+ipconfig /release
+ipconfig /renew</code></pre>
+
+
+
+<p>각 명령어의 역할은 이렇습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>ipconfig /flushdns</strong><br>오래된 DNS 정보를 지웁니다.</li>
+
+
+
+<li><strong>ipconfig /release</strong><br>현재 받아온 IP 주소를 해제합니다.</li>
+
+
+
+<li><strong>ipconfig /renew</strong><br>공유기에서 새 IP 주소를 다시 받아옵니다.</li>
+</ul>
+
+
+
+<p>처음 보면 괜히 어려워 보이지만, PC 안에 저장된 낡은 인터넷 주소와 IP 정보를 새로 받는 작업이라고 보면 됩니다.</p>
+
+
+
+<p>저처럼 노트북만 인터넷이 안 되는 상황이라면 이 단계에서 해결될 수 있어요.</p>
+
+
+
+<p>윈도우의 <strong>ipconfig</strong> 명령어 설명은 Microsoft 공식 문서에서도 확인할 수 있습니다. 자세한 명령어 옵션은 <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig" target="_blank" rel="noreferrer noopener">Microsoft ipconfig 공식 문서</a>를 참고하세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">4. 일부 사이트만 안 열리면 DNS 서버를 바꿔보세요</h2>
+
+
+
+<p>와이파이도 연결됐고 다른 앱은 되는 것 같은데, 특정 웹사이트만 안 열리거나 브라우저 접속이 이상하다면 DNS 문제를 의심할 수 있습니다.</p>
+
+
+
+<p>DNS는 도메인 주소를 실제 접속 주소로 바꿔주는 역할을 합니다. 이 과정이 꼬이면 인터넷이 완전히 끊긴 것처럼 보이거나, 일부 사이트만 안 열릴 수 있어요.</p>
+
+
+
+<p>이럴 때는 DNS 서버를 Google DNS나 Cloudflare DNS로 바꿔볼 수 있습니다.</p>
+
+
+
+<p>추천 DNS 주소는 아래와 같습니다.</p>
+
+
+
+<pre class="wp-block-code"><code>Google DNS
+기본 DNS: 8.8.8.8
+보조 DNS: 8.8.4.4
+
+Cloudflare DNS
+기본 DNS: 1.1.1.1
+보조 DNS: 1.0.0.1</code></pre>
+
+
+
+<p>모든 인터넷 문제를 DNS 변경으로 해결할 수 있는 건 아닙니다. 하지만 일부 사이트만 안 열리거나, 인터넷 연결이 애매하게 먹통처럼 보일 때는 시도해볼 만합니다.</p>
+
+
+
+<p>Google Public DNS 설정 방법은 Google Developers의 <a href="https://developers.google.com/speed/public-dns/docs/using" target="_blank" rel="noreferrer noopener">Google Public DNS 공식 안내</a>에서도 확인할 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">5. 공용 와이파이면 로그인 페이지부터 확인하세요</h2>
+
+
+
+<p>카페, 병원, 회사, 호텔, 공공장소 와이파이라면 일반 가정용 와이파이와 다르게 봐야 합니다.</p>
+
+
+
+<p>공용 와이파이는 연결만 됐다고 바로 인터넷이 되는 게 아닙니다. 브라우저에서 로그인 페이지나 약관 동의 페이지를 거쳐야 인터넷이 열리는 경우가 많아요.</p>
+
+
+
+<p>이럴 때는 브라우저를 열고 아무 웹사이트나 입력해보세요. 인증 페이지가 뜨면 동의나 로그인을 완료해야 합니다.</p>
+
+
+
+<p>그래도 인증 페이지가 안 뜬다면 아래를 확인하세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>브라우저에서 새 탭 열기</li>
+
+
+
+<li>와이파이 끊었다가 다시 연결</li>
+
+
+
+<li>비공개 DNS 끄기</li>
+
+
+
+<li>MAC 주소 랜덤화 대신 기기 MAC 사용</li>
+</ul>
+
+
+
+<p>특히 안드로이드에서 비공개 DNS를 켜둔 경우, 일부 공용 와이파이 인증 페이지가 제대로 열리지 않을 수 있습니다. 이때는 비공개 DNS를 잠시 끄고 다시 접속해보세요.</p>
+
+
+
+<p>또 아이폰이나 갤럭시는 보안을 위해 와이파이마다 임의 MAC 주소를 사용할 수 있습니다. 그런데 일부 회사나 공용 와이파이는 이 주소를 새 기기로 인식하거나 접속 제한에 걸릴 수 있어요.</p>
+
+
+
+<p>공용 와이파이에서만 유독 접속이 안 된다면, 해당 와이파이 설정에서 <strong>기기 MAC 사용</strong>으로 바꿔보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">6. 연결은 되는데 자주 끊기면 2.4GHz와 5GHz를 확인하세요</h2>
+
+
+
+<p>인터넷이 아예 안 되는 건 아니지만 자꾸 끊기거나 너무 느리다면 와이파이 대역 문제일 수 있습니다.</p>
+
+
+
+<p>공유기에는 보통 2.4GHz와 5GHz 와이파이가 있습니다.</p>
+
+
+
+<p>간단히 보면 이렇게 나눌 수 있어요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>공유기와 가까움 → 5GHz</li>
+
+
+
+<li>벽이 많거나 거리가 멂 → 2.4GHz</li>
+</ul>
+
+
+
+<p>5GHz는 속도가 빠르지만 벽이나 거리에 약합니다. 2.4GHz는 속도는 느릴 수 있지만 더 멀리 가고 벽을 조금 더 잘 통과합니다.</p>
+
+
+
+<p>공유기 바로 옆인데도 인터넷이 느리면 5GHz를 써보세요. 반대로 방이 멀거나 벽이 많다면 2.4GHz가 더 안정적일 수 있습니다.</p>
+
+
+
+<p>이건 “인터넷이 완전히 안 됨”보다는 “연결은 되는데 불안정함”에 가까운 문제에서 확인하면 좋습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">7. 그래도 안 되면 네트워크 설정 초기화를 해보세요</h2>
+
+
+
+<p>여기까지 했는데도 계속 안 된다면 네트워크 설정 자체가 깊게 꼬였을 수 있습니다.</p>
+
+
+
+<p>이때는 네트워크 설정 초기화를 해볼 수 있습니다. 다만 이 방법은 저장된 와이파이 정보, 블루투스 연결, 네트워크 관련 설정이 초기화될 수 있으니 마지막 쪽에서 진행하세요.</p>
+
+
+
+<h3 class="wp-block-heading">윈도우</h3>
+
+
+
+<p>설정 &gt; 네트워크 및 인터넷 &gt; 고급 네트워크 설정 &gt; 네트워크 초기화</p>
+
+
+
+<p>초기화 후 재부팅이 필요할 수 있습니다.</p>
+
+
+
+<h3 class="wp-block-heading">아이폰</h3>
+
+
+
+<p>설정 &gt; 일반 &gt; 전송 또는 iPhone 재설정 &gt; 재설정 &gt; 네트워크 설정 재설정</p>
+
+
+
+<h3 class="wp-block-heading">갤럭시</h3>
+
+
+
+<p>설정 &gt; 일반 &gt; 초기화 &gt; 네트워크 설정 초기화</p>
+
+
+
+<p>이 방법은 귀찮지만, 와이파이 설정이 계속 꼬이거나 특정 기기에서만 문제가 반복될 때 도움이 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">8. 마지막 수단: 구형 공유기라면 공장 초기화도 가능합니다</h2>
+
+
+
+<p>여기까지 했는데도 모든 기기에서 인터넷이 안 되고, 공유기 관리자 페이지에도 정상 접속이 어렵다면 공유기 공장 초기화를 검토할 수 있습니다.</p>
+
+
+
+<p>다만 공장 초기화는 와이파이 이름, 비밀번호, 통신사 설정, 포트포워딩 같은 기존 설정이 지워질 수 있습니다. 공유기 설정값을 모르면 먼저 제조사 안내나 통신사 고객센터를 확인하세요.</p>
+
+
+
+<p>구형 공유기에서는 30-30-30 방식으로 초기화하는 방법이 알려져 있지만, 모든 공유기에 해당하는 방법은 아닙니다.</p>
+
+
+
+<p>최신 공유기는 보통 전원이 켜진 상태에서 Reset 버튼을 7~10초 정도 누르는 방식으로 초기화하는 경우가 많습니다. 정확한 방법은 사용 중인 공유기 모델의 설명서를 기준으로 확인하세요.</p>
+
+
+
+<p>공유기 초기화는 “일단 해보자”로 누르면 안 됩니다. 와이파이 비밀번호나 통신사 설정을 모르는 상태라면 오히려 복구가 더 귀찮아질 수 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<p>와이파이는 연결됐는데 인터넷이 안 될 때는 무작정 공유기를 초기화하지 말고, 먼저 원인을 나눠서 봐야 합니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>내 기기만 안 되는지</li>
+
+
+
+<li>모든 기기에서 안 되는지</li>
+
+
+
+<li>일부 사이트만 안 되는지</li>
+
+
+
+<li>공용 와이파이에서만 안 되는지</li>
+
+
+
+<li>연결은 되는데 자주 끊기는지</li>
+</ul>
+
+
+
+<p>내 기기만 안 되면 와이파이 삭제 후 다시 연결하거나 DNS 캐시와 IP를 새로 받아오세요.<br>모든 기기에서 안 되면 공유기, 모뎀, WAN 포트, 통신사 장애를 먼저 확인하세요.<br>일부 사이트만 안 되면 DNS 변경을 시도할 수 있습니다.</p>
+
+
+
+<p>저처럼 특정 PC에서만 인터넷이 안 되는 경우에는 공유기보다 DNS 캐시나 IP 할당 문제가 원인일 수 있습니다.<br>이럴 때는 <strong>ipconfig /flushdns</strong>, <strong>ipconfig /release</strong>, <strong>ipconfig /renew</strong> 순서로 확인해보세요.</p>
+
+
+
+<p>공유기 공장 초기화는 마지막 수단입니다. 설정을 모르는 상태에서 먼저 누르면 문제가 더 커질 수 있으니, 쉬운 방법부터 순서대로 확인하는 게 안전합니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">와이파이가 더 궁금하시다면</h5>
+
+
+
+<p><a href="https://spacecatx.me/who-is-using-my-wifi-check-connected-devices/">우리집 와이파이 누가 쓰는지 확인할 수 있을까? (공유기 접속 기기 확인법)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/can-company-wifi-admin-see-browsing-history/">회사 와이파이, 인터넷, 메신저 기록 관리자 볼 수 있나요? (유튜브·시크릿모드·회사메신저·카톡)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/wifi-slow-at-night/">와이파이 밤에만 느려지는 이유 (저녁·특정시간 인터넷 느림 해결)</a></p>
+
+
+
+<p></p>

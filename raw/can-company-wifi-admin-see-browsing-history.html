@@ -1,0 +1,338 @@
+
+<h3 class="wp-block-heading">회사 와이파이 기록, 관리자는 열람 할 수 있나요?</h3>
+
+
+
+<p>회사일 하다 보면, 잠시 개인적인 용무 볼 때도 있잖아요(사실 어떻게 매일 100% 일만 하냐구요). 잠깐 짬 날 때 유튜브 하나 보고, 쇼핑몰 잠깐 들어가 보고, 친구랑 카톡 몇 마디 하기도 하고요.</p>
+
+
+
+<p>그러다 갑자기 이런 생각이 듭니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>이거… 회사 관리자한테 다 보이는 거 아니야?</p>
+</blockquote>
+
+
+
+<p>결론부터 말하면 <strong>사람들이 생각하는 것처럼 모든 내용을 다 볼 수 있는 건 아닙니다.</strong> 하지만 <strong>일부 기록은 남을 수 있습니다.</strong> 어디까지 보이고 어디까지 안 보이는지 정리해볼게요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">회사 와이파이, 실제로 무엇이 보일까?</h2>
+
+
+
+<p>회사 네트워크는 보통 이런 구조입니다.</p>
+
+
+
+<pre class="wp-block-code"><code>회사 PC / 스마트폰 &gt; 와이파이 또는 유선 LAN &gt; 회사 라우터 / 방화벽 &gt; 인터넷</code></pre>
+
+
+
+<p>와이파이든 유선 인터넷이든 같은 회사 네트워크를 통과하기 때문에, 기록이 남는다면 <strong>둘 다 동일하게 로그가 남을 수 있습니다.</strong> 회사 네트워크 장비에는 보통 이런 정보가 쌓여요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>어떤 기기가 어떤 사이트에 접속했는지</li>
+
+
+
+<li>언제 접속했는지</li>
+
+
+
+<li>데이터 사용량</li>
+</ul>
+
+
+
+<p>로그는 보통 이런 형태입니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>192.168.xxx.xxx &gt; youtube.com 접속 &gt; 접속 시간 14:32</p>
+</blockquote>
+
+
+
+<p>즉 <strong>어떤 사이트에 접속했는지는 확인될 수 있습니다.</strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">유튜브 영상 내용까지 보일까? URL 전체는?</h2>
+
+
+
+<p>대부분의 경우 <strong>내용까지는 확인할 수 없습니다.</strong> 요즘 사이트들은 대부분 HTTPS 암호화를 사용하기 때문이에요.</p>
+
+
+
+<p>유튜브를 봤다면 회사 장비에는 보통 이런 식으로 남을 수 있어요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>youtube.com 접속했다는 사실</li>
+
+
+
+<li>접속 시간</li>
+
+
+
+<li>사용 데이터량</li>
+</ul>
+
+
+
+<p>하지만 일반적인 환경에서는 이 내용까지 바로 보기는 어렵습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>어떤 유튜브 영상을 봤는지</li>
+
+
+
+<li>어떤 댓글을 달았는지</li>
+
+
+
+<li>어떤 검색어를 입력했는지</li>
+</ul>
+
+
+
+<p>다만 예외가 있어요. 회사 PC에 <strong>보안 프로그램, 프록시, SSL 검사 장비, 화면 모니터링 프로그램</strong>이 설치되어 있으면 더 자세한 정보가 수집될 수 있습니다. 회사 와이파이만으로는 보통 도메인 수준까지고, 회사 PC와 보안 프로그램까지 있으면 더 많이 볼 수 있다고 보면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">시크릿모드 쓰면 기록 안 남을까?</h2>
+
+
+
+<p>많이 오해하는 부분입니다. 시크릿모드는 <strong>&#8220;내 기기 안에만&#8221; 기록을 덜 남기는 기능</strong>이에요.</p>
+
+
+
+<p>쉽게 말하면 이겁니다. 집에서 가족이랑 같은 PC 쓸 때 내 방문기록 안 보이게 하는 용도에 가까운 거예요. 나한테만 안 보이는 거지, 회사 네트워크 입장에서는 아무 차이가 없습니다.</p>
+
+
+
+<p>Chrome 공식 도움말에서도 시크릿모드는 기기 안의 방문 기록을 남기지 않는 데 도움을 주지만, 학교·회사·인터넷 제공업체는 사용자의 활동을 볼 수 있다고 안내합니다.</p>
+
+
+
+<p>시크릿모드를 켜도 이런 기록은 남을 수 있어요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>회사 네트워크 장비의 접속 로그</li>
+
+
+
+<li>방화벽 또는 보안 장비의 도메인 접속 기록</li>
+
+
+
+<li>회사 PC에 설치된 보안 프로그램 기록</li>
+</ul>
+
+
+
+<p><strong>&#8220;시크릿모드면 회사 관리자도 못 보겠지?&#8221;는 틀린 생각입니다.</strong></p>
+
+
+
+<p><a href="https://support.google.com/chrome/answer/95464" target="_blank" rel="noopener">Chrome 고객센터 — 시크릿 모드로 탐색하기</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">회사 메신저 대화도 볼 수 있을까?</h2>
+
+
+
+<p>메신저 종류에 따라 완전히 다릅니다.</p>
+
+
+
+<p><strong>회사 메신저 (Teams, Slack, Google Chat 등)</strong></p>
+
+
+
+<p>이런 메신저는 회사 서버에 대화 기록이 저장되는 구조예요. 특히 Microsoft Teams의 경우 Microsoft Purview eDiscovery 기능을 통해 채팅 메시지를 검색하고 열람할 수 있는 기능이 공식적으로 제공됩니다. 회사 정책에 따라 IT팀이나 관리자가 <strong>대화 로그를 확인할 수 있는 경우가 있습니다.</strong></p>
+
+
+
+<p>그래서 회사 메신저에서는 이런 말을 조심하는 게 좋아요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>회사 욕, 상사 욕</li>
+
+
+
+<li>인사 평가 관련 뒷말</li>
+
+
+
+<li>퇴사 준비, 이직, 부업 이야기</li>
+
+
+
+<li>고객사 정보나 내부 프로젝트 정보</li>
+</ul>
+
+
+
+<p>카톡처럼 그냥 흘러가는 대화라고 생각하면 위험합니다. 실제로 제가 다니던 회사에서도 팀즈로 회사 욕 좀 했다가 관리자한테 욕을 먹었다는 카더라가 있었어요 ㅋㅋㅋ 그래서 디자인팀은 팀즈 대신 피그마 채팅으로 사담을 나눴다는 얘기도… 모두 회사 메신저, 회사 컴퓨터는 조심합시다!</p>
+
+
+
+<p><a href="https://learn.microsoft.com/en-us/purview/edisc-search-teams-data" data-type="link" data-id="https://learn.microsoft.com/en-us/purview/edisc-search-teams-data" target="_blank" rel="noopener">Microsoft Learn — Microsoft Teams chat messages in eDiscovery</a></p>
+
+
+
+<p><strong>개인 메신저 (카카오톡, 텔레그램, 인스타 DM 등)</strong></p>
+
+
+
+<p>개인 메신저는 외부 서버 + 암호화 통신을 사용합니다. 회사 네트워크에서는 보통 카카오톡 서버에 접속했다는 기록 정도만 남을 수 있고, <strong>대화 내용 자체는 확인할 수 없는 경우가 대부분입니다.</strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">관리자가 매일 내 기록을 보고 있을까?</h2>
+
+
+
+<p>보통은 그렇지 않습니다. 관리자도 할 일이 많거든요 ㅋㅋ</p>
+
+
+
+<p>회사 네트워크 로그는 남을 수 있지만, IT 담당자가 매일 모든 직원의 인터넷 기록을 하나씩 들여다보는 경우는 흔하지 않아요. 대부분은 <strong>문제가 생겼을 때 확인합니다.</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>보안 사고나 악성코드 감염이 의심될 때</li>
+
+
+
+<li>데이터 유출 정황이 있을 때</li>
+
+
+
+<li>트래픽 사용량이 비정상적으로 많을 때</li>
+
+
+
+<li>회사 정책 위반 조사가 있을 때</li>
+</ul>
+
+
+
+<p>즉, &#8220;회사 와이파이 쓰면 관리자가 내 유튜브 기록을 실시간으로 보고 있다&#8221;라기보다는, <strong>기록이 남을 수 있고 필요하면 확인될 수 있다</strong>에 가깝습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<ul class="wp-block-list">
+<li>회사 네트워크에서는 <strong>어떤 사이트에 접속했는지는 남을 수 있음</strong> (유튜브 들어갔구나 수준)</li>
+
+
+
+<li>와이파이와 유선 인터넷은 <strong>기록 차이 없음</strong></li>
+
+
+
+<li>사이트 내용까지 보는 건 <strong>대부분 불가능</strong> (어떤 영상 봤는지는 모름)</li>
+
+
+
+<li>시크릿모드는 <strong>내 기기에서만 기록 삭제</strong>, 회사 네트워크 로그에는 그대로 남음</li>
+
+
+
+<li>회사 메신저는 <strong>회사 서버에 기록 저장</strong>, 열람 가능한 경우 있음</li>
+
+
+
+<li>개인 메신저(카카오톡 등)는 <strong>대화 내용 열람 불가</strong>, 접속 기록만 남을 수 있음</li>
+
+
+
+<li>관리자가 매일 들여다보는 경우는 드물고, <strong>문제 생겼을 때 확인하는 게 일반적</strong></li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">와이파이가 더 궁금하시다면</h5>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-spacecatx wp-block-embed-spacecatx"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="E9L1dmtnxR"><a href="https://spacecatx.me/who-is-using-my-wifi-check-connected-devices/">우리집 와이파이 누가 쓰는지 확인할 수 있을까? (공유기 접속 기기 확인법)</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;우리집 와이파이 누가 쓰는지 확인할 수 있을까? (공유기 접속 기기 확인법)&#8221; &#8212; SpaceCatX" src="https://spacecatx.me/who-is-using-my-wifi-check-connected-devices/embed/#?secret=p7rNWVsNjw#?secret=E9L1dmtnxR" data-secret="E9L1dmtnxR" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<p><a href="https://spacecatx.me/internet-slow-after-adding-router/">인터넷 갑자기 느려졌다면? 공유기 추가 설치 때문일 수도 있어요!</a></p>
+
+
+
+<p><a href="https://spacecatx.me/wifi-connected-but-no-internet/">와이파이 연결됐는데 인터넷 안됨? 갑자기 이럴 때 해결 방법 정리 (DNS / 공유기 / flushdns)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/wifi-slow-at-night/">와이파이 밤에만 느려지는 이유 (저녁·특정시간 인터넷 느림 해결)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/internet-down-use-phone-tethering-hotspot-usb/">인터넷 끊겼을 때 임시 인터넷 쓰는 방법, 핫스팟부터 USB 테더링까지</a></p>
+
+
+
+<p></p>
+
+
+
+<p></p>

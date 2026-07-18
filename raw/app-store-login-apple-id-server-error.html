@@ -1,0 +1,379 @@
+
+<h2 class="wp-block-heading">App Store 로그인하려는데 Apple ID 서버 연결 오류가 뜨나요?</h2>
+
+
+
+<p>아이폰이나 아이패드에서 App Store에 로그인하려고 했는데 갑자기 이런 문구가 뜰 때가 있습니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>“Apple ID 서버에 연결하는 동안 오류가 발생했습니다.”</p>
+</blockquote>
+
+
+
+<p>비밀번호를 틀린 것도 아닌데 계속 이 문구만 뜨면 진짜 답답합니다. App Store에 들어가려다 막히고, 설정에서 Apple ID를 눌러도 막히고, iCloud 로그인을 하려다가도 같은 오류가 뜰 수 있습니다.</p>
+
+
+
+<p>이럴 때 괜히 계정이 털린 건가 싶고, Apple ID 비밀번호를 바꿔야 하나 싶어지죠. 그런데 <strong>Apple ID 서버 연결 오류</strong>는 비밀번호 자체 문제라기보다, 아이폰과 Apple 인증 서버 사이의 연결이나 인증 과정이 꼬였을 때 뜨는 경우가 많습니다.</p>
+
+
+
+<p>그래서 비밀번호를 계속 바꾸기보다, 먼저 네트워크와 Apple 서버 상태, 기기 시간, 로그인 세션을 순서대로 확인하는 게 좋습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">이런 상황에서 자주 뜹니다</h2>
+
+
+
+<p>Apple ID 서버 연결 오류는 아래 상황에서 특히 자주 보입니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>iOS 업데이트 직후</li>
+
+
+
+<li>새 아이폰이나 아이패드에서 처음 로그인할 때</li>
+
+
+
+<li>2단계 인증 기기를 바꾼 뒤</li>
+
+
+
+<li>Wi-Fi에서는 안 되는데 LTE나 5G에서는 될 때</li>
+
+
+
+<li>App Store만 유독 로그인이 안 될 때</li>
+
+
+
+<li>iCloud, 미디어 및 구입 항목, App Store 계정이 서로 꼬였을 때</li>
+
+
+
+<li>Apple 서버가 일시적으로 불안정할 때</li>
+</ul>
+
+
+
+<p>특징은 하나입니다. <strong>“비밀번호가 틀렸습니다”가 아니라 “서버에 연결할 수 없다”는 식으로 나온다는 것</strong>입니다.</p>
+
+
+
+<p>그러니까 이 오류는 단순히 내가 암호를 잘못 입력했다는 뜻보다는, 인증 서버와 연결하는 과정에서 뭔가 막혔다는 신호에 가깝습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">왜 Apple ID 서버 연결 오류가 뜰까요?</h2>
+
+
+
+<h3 class="wp-block-heading">1. iOS 업데이트 후 인증 정보가 꼬인 경우</h3>
+
+
+
+<p>iOS 업데이트 후에는 Apple ID, iCloud, App Store, 미디어 및 구입 항목의 인증 정보가 다시 확인됩니다. 이 과정에서 기존 로그인 정보와 새 인증 흐름이 깔끔하게 맞지 않으면 서버 연결 오류가 뜰 수 있습니다.</p>
+
+
+
+<p>계정이 틀린 건 아닌데, 기기 안에 남아 있던 로그인 세션이 애매하게 꼬인 상태라고 보면 됩니다.</p>
+
+
+
+<h3 class="wp-block-heading">2. 네트워크 환경 문제</h3>
+
+
+
+<p>공용 와이파이, 회사 네트워크, 학교 네트워크에서는 Apple 인증 서버와의 연결이 불안정할 수 있습니다. 특정 보안 설정이나 방화벽 때문에 로그인 과정이 중간에 막히는 경우도 있습니다.</p>
+
+
+
+<p>그래서 Wi-Fi에서는 계속 안 되다가 모바일 데이터로 바꾸면 갑자기 로그인되는 경우가 있습니다. 이럴 때는 계정 문제가 아니라 현재 네트워크 문제일 가능성이 큽니다.</p>
+
+
+
+<h3 class="wp-block-heading">3. Apple 서버가 일시적으로 불안정한 경우</h3>
+
+
+
+<p>대형 iOS 업데이트 직후나 특정 시간대에는 Apple 서버에 로그인 요청이 몰릴 수 있습니다. 이 경우 내 기기나 내 계정이 문제가 아니라, Apple 쪽 인증 서버가 일시적으로 불안정한 상황일 수 있습니다.</p>
+
+
+
+<p>같은 시간대에 App Store, iCloud, Apple Music, Apple ID 로그인이 동시에 이상하다면 서버 상태를 확인해보는 것이 좋습니다.</p>
+
+
+
+<h3 class="wp-block-heading">4. 기기 시간이 어긋난 경우</h3>
+
+
+
+<p>의외로 기기 시간이 틀어져 있어도 인증 오류가 날 수 있습니다. 서버 시간과 아이폰 시간이 크게 다르면 로그인 인증 과정이 정상적으로 처리되지 않을 수 있습니다.</p>
+
+
+
+<p>특히 해외 이동 후, VPN 사용 후, 수동으로 시간대를 바꾼 적이 있다면 날짜와 시간 설정을 확인해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">먼저 Apple 서버 상태를 확인하세요</h2>
+
+
+
+<p>App Store나 Apple ID 로그인이 갑자기 안 된다면 내 기기부터 의심하기 전에 Apple 서버 상태를 먼저 확인하는 것이 좋습니다.</p>
+
+
+
+<p>Apple 공식 시스템 상태 페이지에서 App Store, Apple ID, iCloud 계정 및 로그인 항목에 문제가 있는지 확인할 수 있습니다.</p>
+
+
+
+<p><a href="https://www.apple.com/support/systemstatus/" target="_blank" rel="noreferrer noopener">Apple 시스템 상태 페이지</a></p>
+
+
+
+<p>여기에서 관련 서비스에 문제가 표시되어 있다면, 비밀번호를 바꾸거나 앱을 지우기보다 잠시 기다리는 편이 낫습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">1. 와이파이 대신 모바일 데이터로 로그인해보세요</h2>
+
+
+
+<p>가장 먼저 해볼 것은 네트워크 변경입니다. Wi-Fi에서 계속 Apple ID 서버 연결 오류가 뜬다면, Wi-Fi를 끄고 LTE나 5G로 바꿔서 다시 시도해보세요.</p>
+
+
+
+<ol class="wp-block-list">
+<li>Wi-Fi를 끕니다.</li>
+
+
+
+<li>모바일 데이터를 켭니다.</li>
+
+
+
+<li>App Store를 완전히 종료합니다.</li>
+
+
+
+<li>다시 App Store를 열고 로그인합니다.</li>
+</ol>
+
+
+
+<p>반대로 모바일 데이터에서 안 된다면 안정적인 Wi-Fi로 바꿔서 시도해보세요. 핵심은 현재 네트워크가 Apple 인증 서버와 정상적으로 통신하는지 확인하는 것입니다.</p>
+
+
+
+<p>VPN을 사용 중이라면 잠시 꺼두는 것도 좋습니다. Apple ID 로그인 과정은 접속 위치나 네트워크 상태에 민감하게 반응할 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">2. 날짜와 시간을 자동으로 설정하세요</h2>
+
+
+
+<p>기기 시간이 어긋나 있으면 Apple ID 인증 과정에서 문제가 생길 수 있습니다. 날짜와 시간은 자동 설정으로 맞춰두는 것이 좋습니다.</p>
+
+
+<pre class="wp-block-code"><code>설정 &gt; 일반 &gt; 날짜 및 시간 &gt; 자동으로 설정 켜기</code></pre>
+
+
+<p>자동 설정을 켠 뒤에는 App Store를 완전히 종료하고 다시 실행해보세요.</p>
+
+
+
+<p>해외 여행 후, VPN 사용 후, 시간대를 수동으로 바꾼 적이 있다면 이 단계에서 해결되는 경우도 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">3. App Store에서 로그아웃 후 다시 로그인하기</h2>
+
+
+
+<p>App Store만 유독 로그인이 안 된다면, 미디어 및 구입 항목 계정이 꼬였을 수 있습니다.</p>
+
+
+<pre class="wp-block-code"><code>설정 &gt; 상단 Apple ID 이름 &gt; 미디어 및 구입 항목 &gt; 로그아웃
+이후 다시 로그인</code></pre>
+
+
+<p>iCloud 계정은 정상인데 App Store에서만 오류가 난다면, 전체 Apple ID 로그아웃보다 미디어 및 구입 항목 계정부터 확인하는 것이 부담이 적습니다.</p>
+
+
+
+<p>특히 예전에 다른 Apple ID로 앱을 다운로드했거나, 국가가 다른 계정을 사용한 적이 있다면 이 부분이 꼬일 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">4. 아이폰이나 아이패드를 재시동하세요</h2>
+
+
+
+<p>단순하지만 효과가 있는 방법입니다. iOS 업데이트 직후나 장시간 사용 후에는 인증 세션이 꼬인 상태로 남아 있을 수 있습니다.</p>
+
+
+
+<p>기기를 완전히 껐다가 다시 켠 뒤 App Store 로그인을 다시 시도해보세요.</p>
+
+
+
+<p>재시동 후에는 여러 앱을 동시에 열기보다, 먼저 App Store나 설정의 Apple ID 화면에서 로그인 상태가 정상인지 확인하는 것이 좋습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">5. Apple ID 웹 로그인도 확인해보세요</h2>
+
+
+
+<p>기기에서 계속 오류가 난다면 브라우저에서 Apple ID 웹 로그인도 확인해볼 수 있습니다.</p>
+
+
+
+<p>Safari나 Chrome에서 Apple 계정 페이지에 접속해 로그인이 되는지 확인해보세요. 웹에서는 로그인되는데 App Store에서만 안 된다면, 기기나 App Store 세션 문제일 가능성이 높아집니다.</p>
+
+
+<pre class="wp-block-code"><code>account.apple.com 접속 &gt; Apple ID 로그인 확인</code></pre>
+
+
+<p>반대로 웹에서도 로그인이 안 된다면 비밀번호, 2단계 인증, 계정 잠금 상태를 함께 확인해야 합니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">비밀번호를 계속 바꿔야 할까요?</h2>
+
+
+
+<p>이 오류가 뜬다고 해서 바로 비밀번호를 계속 바꾸는 것은 추천하지 않습니다.</p>
+
+
+
+<p>문구 자체가 “비밀번호가 틀렸습니다”가 아니라 “Apple ID 서버에 연결하는 동안 오류가 발생했습니다”라면, 암호 입력 문제보다 서버 연결, 네트워크, 기기 인증 세션 문제일 가능성이 있습니다.</p>
+
+
+
+<p>비밀번호를 여러 번 바꾸면 오히려 다른 기기에서 다시 로그인해야 하고, iCloud나 App Store 인증이 더 복잡해질 수 있습니다.</p>
+
+
+
+<p>먼저 서버 상태, 네트워크, 날짜와 시간, 미디어 및 구입 항목 계정을 확인한 뒤에도 안 될 때 비밀번호 문제를 보는 것이 좋습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<p>App Store 로그인 중 “Apple ID 서버에 연결하는 동안 오류가 발생했습니다”가 뜬다면, 비밀번호 오류라기보다 Apple 서버 연결이나 기기 인증 과정 문제일 수 있습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Apple 시스템 상태 먼저 확인</li>
+
+
+
+<li>Wi-Fi와 모바일 데이터 바꿔서 시도</li>
+
+
+
+<li>날짜와 시간 자동 설정 확인</li>
+
+
+
+<li>미디어 및 구입 항목 로그아웃 후 재로그인</li>
+
+
+
+<li>아이폰 또는 아이패드 재시동</li>
+
+
+
+<li>Apple ID 웹 로그인 확인</li>
+</ul>
+
+
+
+<p><strong>Apple ID 서버 연결 오류가 반복된다면 비밀번호부터 바꾸지 말고, Apple 서버 상태와 네트워크, 날짜 및 시간, App Store 계정 세션을 먼저 확인해보세요.</strong></p>
+
+
+
+<p>처음 보면 계정 문제가 생긴 것 같아 불안하지만, 실제로는 네트워크나 인증 세션이 꼬인 단순한 문제인 경우도 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">애플 제품이 더 궁금하시다면</h5>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-spacecatx wp-block-embed-spacecatx"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="cOvVVW647r"><a href="https://spacecatx.me/ios-apple-id-password-popup-after-update/">iOS 업데이트 후 “Apple ID 암호를 입력하십시오” 반복될 때</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;iOS 업데이트 후 “Apple ID 암호를 입력하십시오” 반복될 때&#8221; &#8212; SpaceCatX" src="https://spacecatx.me/ios-apple-id-password-popup-after-update/embed/#?secret=z5PfVYMXNo#?secret=cOvVVW647r" data-secret="cOvVVW647r" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<p><a href="https://spacecatx.me/apple-id-trusted-phone-number-added/">애플 계정 신뢰하는 번호가 추가되었습니다? 해킹인지 확인 방법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/apple-tv-4k-remote-volume-not-working/">Apple TV 4K 리모콘 볼륨 조절 안됨? 이렇게 해보세요</a></p>
+
+
+
+<p><a href="https://spacecatx.me/macbook-neo-college-major-guide/">맥북 네오 대학생이 쓰기 괜찮을까? 학과별 추천/비추천</a></p>
+
+
+
+<p><a href="https://spacecatx.me/disneyplus-macbook-4k/">맥북 디즈니플러스 4K 안 될 때, 아이폰 AirPlay로 보는 의외의 방법</a></p>

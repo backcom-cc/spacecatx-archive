@@ -1,0 +1,362 @@
+
+<h2 class="wp-block-heading">아니 보안 업데이트 하나 했다고 <br>왜 이렇게 사람을 괴롭히냐고요…ㅜ </h2>
+
+
+
+<p><br><strong>윈도우11 KB5079473 설치 안됨 문제 해결법</strong></p>
+
+
+
+<p>윈도우11 업데이트하려는데 0%에서 멈추거나, 90%대에서 안 넘어가거나, 재부팅 후 다시 원래대로 돌아가 버리는 경우가 종종 있더라구요</p>
+
+
+
+<p>최근 <strong>KB5079473 업데이트 이후</strong> 이런 설치 실패 이야기가 보이고 있고, 특히 <strong>갤럭시북 쪽은 C드라이브 접근 불가</strong>까지 같이 거론되고 있어서 더 불안한 상황입니다.</p>
+
+
+
+<p>진짜 컴퓨터 멀쩡히 쓰다가 갑자기 이러면 짜증부터 납니다 ㅋㅋ</p>
+
+
+
+<h5 class="wp-block-heading">특히 갤럭시북처럼 <strong>C드라이브 접근 불가까지 같이 말 나오는 케이스도 있어서</strong>, 그 부분은 <strong>글 마지막에 따로 정리해둘게요.</strong></h5>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">이번 KB5079473에서 어떤 문제가 있냐?</h2>
+
+
+
+<p>이번 업데이트 관련해서 많이 보이는 증상은 대충 이런 쪽입니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>업데이트가 끝까지 설치되지 않음</li>
+
+
+
+<li>90%대나 100% 근처에서 멈춤</li>
+
+
+
+<li>재부팅 후 <strong>변경 내용을 취소하는 중</strong> 문구가 뜸</li>
+
+
+
+<li><strong>0x80070306, 0x800f081f 같은 오류 코드가 함께 뜨는 경우도 있음</strong></li>
+
+
+
+<li>갤럭시북 일부에서는 <strong>C드라이브 액세스 거부</strong> 문제까지 거론됨</li>
+</ul>
+
+
+
+<p>모든 PC에서 똑같이 터지는 건 아니지만, 적어도 <strong>설치 실패 사례</strong>와 <strong>일부 삼성 기기 문제</strong>가 같이 언급되고 있는 건 맞아 보입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">원인이 무엇일까 추정하자면..</h2>
+
+
+
+<p>이건 아직 딱 잘라 하나로 말하긴 어렵지만, 사용자 사례를 보면 보통 이런 쪽이 원인으로 추정됩니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>기존 업데이트 파일이 꼬여 있음</li>
+
+
+
+<li>시스템 파일이 손상돼 있음</li>
+
+
+
+<li>보안 업데이트와 특정 앱/드라이버가 충돌함</li>
+
+
+
+<li><strong>갤럭시북은 삼성 전용 앱이나 드라이버와 충돌했을 가능성</strong></li>
+</ul>
+
+
+
+<p>그러니까 쉽게 말하면 <strong>업데이트 자체 문제일 수도 있고, 내 PC 환경이랑 부딪힌 문제일 수도 있다</strong> 이 정도로 보는 게 제일 현실적입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">윈도우11 KB5079473 설치 안됨<br>일단 공통으로 먼저 해볼 것</h2>
+
+
+
+<p>이런 건 괜히 처음부터 어려운 거 하지 말고, 쉬운 것부터 차근차근 해보는 게 좋아요.</p>
+
+
+
+<h3 class="wp-block-heading">1) 재부팅부터 다시 해보기</h3>
+
+
+
+<p>너무 당연해 보여도, 업데이트 대기 상태가 꼬여 있던 게 한 번에 풀리는 경우가 있어요.<br></p>
+
+
+
+<h3 class="wp-block-heading">2) 저장 공간 확인하기</h3>
+
+
+
+<p>C드라이브 공간이 너무 부족하면 마지막 단계에서 설치가 실패할 수 있습니다.<br></p>
+
+
+
+<h3 class="wp-block-heading">3) 시스템 복구 명령어 돌려보기</h3>
+
+
+
+<p>관리자 권한으로 터미널이나 명령 프롬프트를 열고 아래 명령어를 실행해보세요.</p>
+
+
+
+<pre class="wp-block-code"><code>sfc /scannow
+DISM /Online /Cleanup-Image /RestoreHealth</code></pre>
+
+
+
+<p>이건 윈도우 시스템 파일이 꼬였는지 검사하고 복구하는 기본 명령어라, 업데이트 실패할 때 제일 먼저 시도하는 방법 중 하나예요.<br></p>
+
+
+
+<h3 class="wp-block-heading">4) 백신을 잠깐 꺼보고 다시 시도하기</h3>
+
+
+
+<p>V3, 알약 같은 서드파티 백신을 쓰는 경우 실시간 감시 때문에 설치 과정이 꼬였다는 이야기도 종종 있습니다.</p>
+
+
+
+<p>물론 무조건 백신 탓이라고 하긴 어렵지만, 잠깐 꺼두고 다시 시도해보는 건 해볼 만합니다.<br></p>
+
+
+
+<h3 class="wp-block-heading">5) 업데이트 저장소 초기화 시도</h3>
+
+
+
+<p>조금 더 강한 방법으로는 Windows Update 저장소를 비우고 다시 받게 만드는 방법도 있습니다.</p>
+
+
+
+<p>이건 보통 <code>SoftwareDistribution</code> 폴더 초기화 방식으로 많이 시도하는데, 초보자 입장에선 살짝 번거로울 수 있으니 위 방법들 먼저 해보고 안 될 때 시도하는 편이 좋아요.<br></p>
+
+
+
+<h3 class="wp-block-heading">6) 마지막으로 수동 설치</h3>
+
+
+
+<p>그래도 계속 실패하면 Microsoft 업데이트 카탈로그에서 <strong>KB5079473</strong>을 직접 받아 수동 설치하는 방법도 있습니다.</p>
+
+
+
+<p>다만 이건 시스템 상태가 이미 꼬여 있는 경우 오히려 더 귀찮아질 수 있으니, 진짜 마지막의 마지막 단계쯤으로 생각하면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">갤럭시북 사용자라면 여기 꼭 보세요</h2>
+
+
+
+<p>이번 이슈에서 조금 더 불안한 건 이쪽입니다.</p>
+
+
+
+<p>일부 갤럭시북에서는 업데이트 후에 <strong>“C:\ 드라이브에 접근할 수 없습니다. 액세스가 거부되었습니다”</strong> 같은 문제가 거론되고 있어요.</p>
+
+
+
+<p>이건 그냥 업데이트 실패 정도가 아니라, 아래처럼 체감이 훨씬 크게 올 수 있어서 더 짜증나는 케이스입니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>파일 접근 안 됨</li>
+
+
+
+<li>앱 실행 꼬임</li>
+
+
+
+<li>삼성 기능 먹통</li>
+
+
+
+<li>관리자 권한 작업 불가</li>
+</ul>
+
+
+
+<p>마이크로소프트도 일부 삼성 기기에서 이런 문제가 발생한 걸 인지하고, 관련 이슈를 추적하면서 해결책을 모색 중인 상태라고 보면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">갤럭시북은 왜 더 말이 나오냐면요</h2>
+
+
+
+<p>이 부분은 <strong>원인 추정</strong>이지만 삼성 전용 앱이나 드라이버, 그리고 최근 보안 업데이트 사이에서 권한 충돌이 생겼을 가능성이 많이 거론됩니다.</p>
+
+
+
+<p>그래서 갤럭시북 사용자라면 윈도우 업데이트만 볼 게 아니라 <strong>삼성 쪽 업데이트 상태도 같이 보는 게 중요</strong>해요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">갤럭시북이라면 이렇게 시도해보세요</h2>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">1) Samsung Update 먼저 확인</h3>
+
+
+
+<p>윈도우 업데이트 전에 삼성 드라이버, BIOS, 관련 앱을 먼저 최신으로 맞춰보세요.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">2) 외장 장치 다 분리하고 진행</h3>
+
+
+
+<p>USB 허브, 외장하드, 멀티포트 같은 주변기기를 잠깐 분리하고 가볍게 본체만 연결된 상태에서 업데이트를 시도해보는 방법도 있습니다.</p>
+
+
+
+<p>이게 모든 경우에 먹힌다고 하긴 어렵지만, 드라이버 인식이 꼬이는 상황을 줄이기 위해 시도해보는 분들이 많아요.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">3) 불안하면 업데이트 잠시 미루기</h3>
+
+
+
+<p>지금 당장 꼭 해야 하는 상황이 아니라면 7일~14일 정도 업데이트를 일시 중지하고 반응을 지켜보는 것도 괜찮습니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">4) 여기까지 왔는데 진짜 C드라이브까지 막혀서 오도가도 못 한다면ㅠ</h3>
+
+
+
+<p>이건 일반적인 업데이트 실패보다 더 심한 상태예요. 파일이 안 열리고, 관리자 권한도 잘 안 먹고, 뭘 지우려고 해도 접근 거부가 떠서 진짜 난감하죠? ㅠㅠ <br><br>이럴 때는 안전 모드로 진입해서 <strong>최근 업데이트 제거를 시도해보는 방법</strong>도 있습니다. 많이 꼬인 상태라면 복구가 마지막 해결책일 수 있어요!</p>
+
+
+
+<pre class="wp-block-code"><code><strong>안전 모드로 진입해서 최근 업데이트 제거를 시도해보는 방법
+</strong>설정 &gt; 복구 &gt; 고급 시작 옵션
+
+안전모드 진입 후 해당 업데이트를 '업데이트 기록 삭제'에서 제거하세요</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">한 줄로 정리하면</h2>
+
+
+
+<p>이번 KB5079473 이슈는 <strong>일반 사용자에겐 설치 실패 문제</strong>, <strong>갤럭시북 사용자에겐 C드라이브 접근 불가까지 같이 주의할 상황</strong>으로 보면 됩니다.</p>
+
+
+
+<p>그러니까 지금 제일 현실적인 순서는 이거예요.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><strong>재부팅 &gt; SFC/DISM &gt; 백신 잠시 끄고 재시도 &gt; 저장소 초기화 &gt; 수동 설치</strong></p>
+</blockquote>
+
+
+
+<p>그리고 갤럭시북이면 <strong>Samsung Update 확인 + 불안하면 잠시 보류</strong> 쪽으로 가는 게 낫습니다. 지금 마소도 해당 이슈를 지속적으로 팔로잉하며 해결책을 찾고 있는 걸로 보이니, 금방 제대로 된 패치가 나올 것 같아요.</p>
+
+
+
+<p>업데이트 하나 때문에 머리 아프지만, 이럴수록 괜히 겁먹고 막 건드리기보다 쉬운 것부터 차근차근 보는 게 제일 낫습니다 ㅋㅋ</p>
+
+
+
+<p>이 이슈는 단순히 Windows 업데이트 자체 문제라기보다 Samsung Galaxy Connect 앱 충돌로 C드라이브 접근 불가가 발생한 사례로 정리되고 있습니다. 관련 내용은 <a href="https://www.windowscentral.com/microsoft/windows-11/samsung-laptop-owners-lose-their-c-drive-access-denied-galaxy-connect" target="_blank" rel="noreferrer noopener">Windows Central 보도</a>에서도 확인할 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">윈도우 업데이트가 잘 안된다면, 같이 보면 좋은 글</h5>
+
+
+
+<p><a href="https://spacecatx.me/windows11-temp-update-file-delete/">윈도우11 임시파일 업데이트 파일 삭제해도 될까? 안 지워질 때 해결법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/new-computer-windows-update-failed/">새 컴퓨터 샀을 때 윈도우 업데이트 실패하는 이유, 해결법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/windows11-inplace-upgrade-fix-update-error/">윈도우11 업데이트 오류 계속될 때 최후 해결법 (포맷 없이 복구) 아직 포맷은 일러요!</a></p>
+
+
+
+<p><a href="https://spacecatx.me/windows11-kb5079473-update-failed-c-drive-access-denied/">윈도우11 KB5079473 설치 안됨? 업데이트 실패·C드라이브 접근 불가 이슈 정리(for 갤럭시북)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/galaxybook-c-drive-access-denied-fix/">갤럭시북 C드라이브 액세스 거부 해결 (윈도우 11 업데이트 이후 파일 안 열림 + 마소 공식 패치)</a></p>

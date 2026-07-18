@@ -1,0 +1,502 @@
+
+<h2 class="wp-block-heading">회사 계정만 자꾸 로그아웃된다면, <br>특히 구글챗이 문제라면&#8230;</h2>
+
+
+
+<p>회사에서 구글 워크스페이스를 메인으로 쓰는 곳, 생각보다 많죠. 저희 회사도 지메일, 구글챗, 구글 드라이브까지 업무 대부분이 구글 계정 하나를 부여 받아 쓰고 있어요. 저는 일할 때 개인 계정과 회사 계정을 같이 씁니다.<br>개인 계정에는 평소 쓰던 즐겨찾기나 로그인 정보가 쌓여 있어서 완전히 버리기가 어렵더라고요.</p>
+
+
+
+<p>그런데 이상하게도 개인 계정은 멀쩡한데, 회사 계정만 자꾸 이런 메시지가 뜹니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>“세션이 만료되었습니다. 다시 로그인해 주세요.”</p>
+</blockquote>
+
+
+
+<p>특히 불편한 건 구글챗이었습니다. 메일이나 드라이브는 필요할때만 켜니까 그런가보다 했는데, 구글챗은 어느 순간 소리소문 없이 로그아웃돼 있어서 메시지를 놓치는 경우가 있더라고요. 재택할 때는 이게 더 난감했습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">왜 회사 계정만 유독 더 잘 끊길까?</h3>
+
+
+
+<p>이건 내 컴퓨터가 이상하다기보다, 워크스페이스 계정 특성에 가깝습니다.<br>개인 계정보다 회사 계정이 보안 기준이 훨씬 빡빡해서, 조금만 이상해 보여도 세션을 빨리 끊는 편입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">원래는 완전 분리가 제일 좋습니다</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>이론적으로는 회사 계정과 개인 계정을 브라우저 자체로 나누는 게 가장 확실합니다.<br>예를 들면 회사 계정은 크롬, 개인 계정은 사파리나 웨일처럼요.</p>
+</blockquote>
+
+
+
+<p>그런데 현실적으로 직장인이 크롬을 버리기는 쉽지 않죠.<br>그래서 여기서는 <strong>크롬 안에서 다중 계정을 최대한 덜 끊기게 쓰는 방법</strong>으로 정리해보겠습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">해결 방법</h2>
+
+
+
+<h3 class="wp-block-heading">1. 크롬 동기화가 꺼져 있지 않은지 먼저 확인하기</h3>
+
+
+
+<p>이미 크롬 프로필을 나눠 쓰고 있어도, 동기화가 꺼져 있거나 일시중지돼 있으면 세션이 불안정해질 수 있습니다.<br>특히 구글챗처럼 실시간 연결이 필요한 서비스는 이런 영향을 더 잘 받는 편이고요.</p>
+
+
+
+<p>크롬에서 아래 경로로 들어가 확인해보세요.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><code>설정 &gt;  나와 Google의 관계 &gt; <strong>동기화 및 Google 서비스</strong></code></p>
+</blockquote>
+
+
+
+<p>여기서 동기화가 정상적으로 켜져 있는지 확인합니다.<br>별거 아닌 것 같지만, 이 부분이 꼬여 있으면 회사 계정만 유독 자주 풀리는 경우가 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">2. 구글 관련 사이트는 쿠키 삭제 예외로 등록하기</h3>
+
+
+
+<p>크롬은 메모리 절약이나 개인정보 보호 설정 때문에 쿠키를 정리하는데, 이 과정에서 워크스페이스 세션까지 같이 날아가면 로그인 상태가 풀릴 수 있습니다.<br>특히 브라우저를 닫았다 다시 열었을 때 자주 튕긴다면 이쪽을 먼저 의심해볼 만합니다.</p>
+
+
+
+<p>크롬 주소창에 아래를 입력해서 들어갑니다.</p>
+
+
+
+<pre class="wp-block-code"><code><a href="chrome://settings/cookies">chrome://settings/cookies</a></code></pre>
+
+
+
+<p>그다음 <strong>쿠키를 언제든지 사용할 수 있는 사이트</strong> 쪽에 아래 주소를 추가해보세요.</p>
+
+
+
+<pre class="wp-block-code"><code>&#91;*.]google.com
+mail.google.com
+chat.google.com</code></pre>
+
+
+
+<p>반대로 <strong>창을 닫을 때 항상 쿠키 삭제</strong> 쪽에 구글 관련 주소가 들어가 있다면 빼주는 게 좋습니다.</p>
+
+
+
+<p>회사 계정이 자꾸 로그아웃된다면, 생각보다 이 설정 하나가 체감 차이를 크게 만들 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">3. 구글챗 탭은 고정(Pin)하고 메모리 절약 대상에서 빼두기</h3>
+
+
+
+<p>유독 구글챗만 먼저 끊기는 분들은 이 방법도 해볼 만합니다.</p>
+
+
+
+<p>크롬은 백그라운드 탭을 절약 대상으로 돌려버리는 경우가 있는데, 구글챗처럼 계속 연결 상태를 유지해야 하는 서비스는 여기서 영향을 받을 수 있습니다.<br>그래서 구글챗 탭을 그냥 열어두는 것보다 <strong>고정</strong>해두는 쪽이 더 안정적일 때가 있습니다.</p>
+
+
+
+<p>방법은 간단합니다.</p>
+
+
+
+<p></p>
+
+
+
+<h4 class="wp-block-heading">웹 버젼 구글챗의 경우</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong>크롬 주소창 옆 [점 세 개(⋮)] 클릭</strong></li>
+
+
+
+<li><strong>[설정]</strong> 선택</li>
+
+
+
+<li><strong>왼쪽 메뉴에서 [성능]</strong> 클릭 (여기가 핵심입니다!)</li>
+
+
+
+<li><strong>[메모리 절약]</strong> 항목 확인</li>
+
+
+
+<li>기능이 켜져 있다면, 바로 아래 <strong>[다음 사이트에서 항상 활성 상태 유지]</strong> 섹션을 찾으세요.</li>
+
+
+
+<li><strong>[추가] 버튼 클릭</strong> 후 구글챗 주소 입력</li>
+
+
+
+<li><code>mail.google.com</code> (지메일 안에 구글챗이 있다면)</li>
+
+
+
+<li><code>chat.google.com</code> (단독 창으로 쓰신다면)</li>
+</ul>
+
+
+
+<p>가능하다면 크롬의 메모리 절약 설정에서 구글챗을 제외해두는 것도 도움이 됩니다.<br>메신저는 “켜져는 있는데 사실상 잠든 상태”가 되면 제일 곤란하니까요.</p>
+
+
+
+<p></p>
+
+
+
+<h4 class="wp-block-heading">앱 버젼 구글챗의 경우</h4>
+
+
+
+<h4 class="wp-block-heading">1. [핵심] 크롬 브라우저를 &#8216;항상&#8217; 켜두기</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong>방법:</strong> 구글챗 앱만 달랑 켜두지 말고, 배후에 크롬 브라우저 창(워크스페이스 프로필이 로그인된 상태)을 하나라도 띄워두세요.</li>
+
+
+
+<li><strong>이유:</strong> 브라우저가 살아있어야 앱이 인증 정보를 실시간으로 수혈받을 수 있습니다.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">2. [설정] 시스템 시작 시 자동 실행 &amp; 백그라운드 허용</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong>방법:</strong> 크롬 설정(<code>chrome://settings/system</code>)에서 <strong>[Google Chrome 종료 후에도 백그라운드 앱을 계속 실행]</strong> 옵션을 반드시 **[켬]**으로 두어야 합니다.</li>
+
+
+
+<li><strong>효과:</strong> 앱을 닫아도 인증 엔진은 살아있어서 세션이 덜 튕깁니다.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">3. [비기] 앱 재설치 (쿠키 초기화)</h4>
+
+
+
+<ul class="wp-block-list">
+<li>만약 무한 루프가 너무 심하다면, 앱을 지우고 **크롬 브라우저에서 다시 &#8216;앱으로 설치&#8217;**를 누르세요. 이때 쿠키가 깨끗하게 정리되면서 세션이 안정화됩니다.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">4. 그래도 계속 끊긴다면, 회사 계정 창은 최대한 한 번 띄운 뒤 유지하기</h3>
+
+
+
+<p>개인 계정과 회사 계정을 자주 오가는 환경이라면, 로그인 세션이 계속 새로 잡히면서 더 예민해질 수 있습니다.</p>
+
+
+
+<p>그래서 회사 계정이 켜진 창은 괜히 자주 닫았다 열지 말고,<br>업무 시간 동안은 한 번 로그인한 상태를 최대한 유지하는 쪽이 덜 끊기는 편입니다.</p>
+
+
+
+<p>완벽한 해결책이라고 하긴 어렵지만, 실제로 써보면 체감 차이가 꽤 있습니다.</p>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">저는 이렇게 쓰고 있습니다</h3>
+
+
+
+<p>정리하면 저는 이런 식으로 접근하는 게 현실적이었습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>크롬 프로필은 회사용 / 개인용으로 나누기</li>
+
+
+
+<li>회사용 프로필에서 동기화 상태 확인하기</li>
+
+
+
+<li>구글 관련 쿠키 예외 등록하기</li>
+
+
+
+<li>구글챗 탭 고정하기</li>
+
+
+
+<li>회사 계정 창은 자주 닫았다 열지 않기</li>
+</ul>
+
+
+
+<p>브라우저를 아예 분리하면 더 깔끔하겠지만, 크롬을 중심으로 일하는 사람에게는 사실 이 정도가 가장 현실적인 타협점에 가깝다고 느꼈습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">보안을 조금 더 확실하게 잡고 싶다면</h3>
+
+
+
+<p>회사 계정 보안 때문에 로그인이 자주 풀리거나,<br>2단계 인증이 번거롭다면 물리 보안 키(유비키, 타이탄 키)를 사용하는 방법도 있습니다.</p>
+
+
+
+<p>이 방식은 쉽게 말해 USB처럼 꽂아서 사용하는 로그인용 ‘물리 키’입니다. 비밀번호와 문자 인증 대신, 직접 보유한 키로 본인 인증을 수행하는 구조입니다.</p>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://link.coupang.com/a/edivGq" data-type="link" data-id="https://link.coupang.com/a/edivGq" target="_blank" rel="noopener"><strong>👉 쿠팡에서 유비키 5C NFC 보기(9만원대)</strong></a></p>
+
+
+
+<a href="https://link.coupang.com/a/ediC1F" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img2c.coupangcdn.com/image/affiliate/banner/6c7be8b1bcd7a30f8ee641ad70df76b0@2x.jpg" alt="[한국총판]Yubico YubiKey-YubiKey 5 NFC YubiKey 5C NFC YubiKey 5C Nano-2단계 인증 보안키-2FA-FIDO-계정 보호-유비코유비키, 1개" width="120" height="240"></a>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://link.coupang.com/a/ediBMV" target="_blank" rel="noopener"><strong>👉 쿠팡에서 구글 타이탄 시큐리티 키 번들 K9T 보기(8만원대)</strong></a></p>
+
+
+
+<a href="https://link.coupang.com/a/ediCfI" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img1a.coupangcdn.com/image/affiliate/banner/f13fadb55c95bc387930f7fc456f2476@2x.jpg" alt="GOOGLE Titan Security Key Bundle K9T, 1개" width="120" height="240"></a>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">1. 설정 방법</h3>
+
+
+
+<p>구글 계정 기준으로 설정 과정은 단순합니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>구글 계정 → 보안 설정 진입</li>
+
+
+
+<li>2단계 인증 활성화</li>
+
+
+
+<li>‘보안 키(Security Key)’ 추가 선택</li>
+
+
+
+<li>유비키 또는 타이탄 키를 USB에 연결 후 등록</li>
+</ul>
+
+
+
+<p>한 번 등록해두면 이후 로그인 시 사용할 수 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">2. 로그인 방식 변화</h3>
+
+
+
+<p>기존 방식과 비교하면 다음과 같이 바뀝니다.</p>
+
+
+
+<p>기존<br>비밀번호 → 문자 인증 또는 앱 인증</p>
+
+
+
+<p>변경<br>비밀번호 → 보안 키 터치</p>
+
+
+
+<p>USB에 키를 연결하고 버튼을 터치하면 인증이 완료되기 때문에,<br>인증 과정이 훨씬 빠르고 간결해집니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">3. 세션 안정성에 미치는 영향</h3>
+
+
+
+<p>워크스페이스 계정은 보안 기준이 높기 때문에, 조금이라도 이상 징후가 감지되면 세션을 빠르게 종료하는 경향이 있습니다.</p>
+
+
+
+<p>보안 키를 사용하는 경우, “신뢰 가능한 사용자”로 판단되는 강도가 높아지기 때문에 다음과 같은 변화가 나타날 수 있습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>로그인 재요청 빈도 감소</li>
+
+
+
+<li>세션 유지 안정성 개선</li>
+
+
+
+<li>보안 경고 감소</li>
+</ul>
+
+
+
+<p>물론 모든 환경에서 완전히 해결된다고 보기는 어렵지만, 보안 정책이 엄격한 계정일수록 체감 효과는 있는 편입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">4. 이런 경우에 특히 적합합니다</h3>
+
+
+
+<ul class="wp-block-list">
+<li>회사 구글 계정이 자주 로그아웃되는 경우</li>
+
+
+
+<li>2단계 인증 과정이 반복적으로 번거로운 경우</li>
+
+
+
+<li>재택 환경에서 다중 계정을 사용하는 경우</li>
+</ul>
+
+
+
+<p>업무용 계정 보안을 중요하게 관리해야 하는 환경이라면,<br>실사용 관점에서도 충분히 고려해볼 수 있는 선택지입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">마무리</h3>
+
+
+
+<p>개인 계정은 멀쩡한데 회사 구글 계정만 자꾸 로그아웃된다면,<br>내 컴퓨터가 이상해서라기보다 <strong>워크스페이스 계정이 원래 더 예민하게 세션을 관리하기 때문</strong>일 가능성이 큽니다.</p>
+
+
+
+<p>특히 재택 중이거나, 개인 계정과 회사 계정을 같이 쓰고 있거나, 구글챗을 항상 켜두는 환경이라면 더 자주 겪을 수 있고요.</p>
+
+
+
+<p>저처럼 구글챗이 조용히 로그아웃돼서 메시지를 놓친 적이 있다면,<br>위 설정들부터 한 번씩 점검해보는 걸 추천합니다.<br>의외로 작은 설정 하나 바꿨을 뿐인데 덜 끊기는 경우가 꽤 있습니다.</p>
+
+
+
+<p>&#8220;이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.&#8221;</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">구글에 대해 더 궁금하시다면</h5>
+
+
+
+<p><a href="https://spacecatx.me/google-ai-overview-web-only-udm14/">구글 AI 요약 없이 웹 결과만 보는 방법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/%ec%95%84%ec%9d%b4%ed%8f%b0%ec%97%90%ec%84%9c%eb%a7%8c-%ea%b5%ac%ea%b8%80-2%eb%8b%a8%ea%b3%84-%ec%9d%b8%ec%a6%9d-%ec%95%88%eb%90%a8-%eb%ac%b4%ed%95%9c-%eb%a1%9c%eb%94%a9-%ea%b3%84%ec%86%8d/">아이폰에서만 구글 2단계 인증 안됨… 무한 로딩 계속될 때</a></p>
+
+
+
+<p><a href="https://spacecatx.me/google-drive-access-denied-loop-fix/">구글 드라이브 권한을 줬는데도 “액세스 필요”가 뜰 때 해결법</a></p>
+
+
+
+<p></p>

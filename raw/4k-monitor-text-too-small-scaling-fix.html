@@ -1,0 +1,486 @@
+
+<h2 class="wp-block-heading">4k 모니터 글씨 너무 작죠? 비싼 모니터인데.</h2>
+
+
+
+<p>요즘은 노트북까지 4K로 나오는 시대죠? 처음엔 화면이 정말 또렷해서 좋았어요. 그런데 막상 며칠 써보면 텍스가 너무 작아서 눈이 쉽게 피로해질 때가 있어요. 저도 처음엔 모니터 문제인가 싶었는데, 알고 보면 대부분은 불량이 아니라 <strong>배율(Scaling) 설정</strong> 문제+케이블 호환 문제였습니다.</p>
+
+
+
+<p>윈도우와 맥 기준으로, 글씨가 너무 작을 때 가장 편하게 쓸 수 있는 설정만 한 번에 정리해보겠습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>바쁘다면 아래 표만 먼저 보고 설정해도 됩니다.</p>
+
+
+
+<h2 class="wp-block-heading">4K 모니터 최적 배율 설정 요약</h2>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>구분</th><th>Windows (윈도우)</th><th>macOS (맥)</th></tr></thead><tbody><tr><td>핵심 설정</td><td>배율(%) 조절</td><td>디스플레이 배율 / 해상도(HiDPI)</td></tr><tr><td>렌더링 특징</td><td>앱에 따라 흐릿함이 생길 수 있음</td><td>상대적으로 선명한 편</td></tr><tr><td>27인치 4K 권장</td><td>150% ~ 175%</td><td>2560×1440처럼 보임</td></tr><tr><td>32인치 4K 권장</td><td>125% ~ 150%</td><td>기본값 또는 더 큰 텍스트 1단계</td></tr><tr><td>추가 팁</td><td>ClearType, 앱별 DPI 재정의</td><td>BetterDisplay, 배율 미세 조정</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">왜 4K 모니터는 글씨가 작게 보일까?</h2>
+
+
+
+<p>이건 보통 모니터 불량이 아니라 <strong>픽셀 밀도(PPI)</strong> 때문입니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>4K 해상도는 픽셀이 매우 촘촘합니다.</li>
+
+
+
+<li>같은 27인치, 32인치 화면이라도 UI와 텍스트가 더 작게 표시됩니다.</li>
+
+
+
+<li>그래서 해상도는 그대로 두고, 배율만 올려서 보는 게 정석입니다.</li>
+</ul>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>즉, 글씨가 작은 건 이상한 게 아니라 정상입니다. 문제는 해상도가 아니라 배율 설정이 안 맞는 경우가 많아요.</p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">💻 Windows: 배율(Scaling) 설정 방법</h2>
+
+
+
+<p><strong>설정 경로:</strong> 설정 &gt; 시스템 &gt; 디스플레이 &gt; 배율 및 레이아웃</p>
+
+
+
+<p>보통은 아래 정도가 가장 무난합니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>27인치 4K:</strong> 150% ~ 175%</li>
+
+
+
+<li><strong>32인치 4K:</strong> 125% ~ 150%</li>
+</ul>
+
+
+
+<p>작업 공간을 넓게 쓰고 싶다면 150%, 글씨를 좀 더 편하게 보고 싶다면 175% 쪽이 낫습니다. 32인치는 화면 자체가 커서 125%만 해도 괜찮은 경우가 많습니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">글씨가 약간 흐릿하다면 ClearType도 같이 보세요</h3>
+
+
+
+<p>배율을 맞췄는데도 글자가 또렷하지 않다면, 윈도우의 <strong>ClearType 텍스트 조정</strong>을 한 번 돌려보는 게 좋습니다.</p>
+
+
+
+<p>검색창에 <code>ClearType 텍스트 조정</code>을 입력해서 실행하면, 몇 단계에 걸쳐 내 눈에 가장 선명한 글꼴 상태를 선택할 수 있습니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>특히 문서 작업이나 디자인 작업을 오래 하는 분이라면 이 설정 차이가 은근 큽니다.</p>
+</blockquote>
+
+
+
+<p>/</p>
+
+
+
+<h3 class="wp-block-heading">특정 앱만 흐릿하다면? 앱별 DPI 설정도 확인하세요</h3>
+
+
+
+<p>윈도우에서 배율을 높였는데도 특정 프로그램만 유독 흐릿하게 보이는 경우가 있습니다. 특히 오래된 프로그램, 구형 업무 툴, 일부 메신저나 설계 툴에서 자주 생깁니다.</p>
+
+
+
+<p><strong>확인 경로:</strong> 해당 실행 파일(.exe) 우클릭 &gt; 속성 &gt; 호환성 &gt; 높은 DPI 설정 변경</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>높은 DPI 조정 동작을 재정의합니다</strong> 체크</li>
+
+
+
+<li>드롭다운에서 <strong>시스템</strong> 또는 <strong>시스템(확장됨)</strong> 선택</li>
+</ul>
+
+
+
+<p>이렇게 하면 앱별로 글씨가 자글자글하게 깨지거나 흐릿해 보이는 문제가 줄어드는 경우가 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">🍎 macOS: 디스플레이 설정 방법</h2>
+
+
+
+<p><strong>설정 경로:</strong> 시스템 설정 &gt; 디스플레이</p>
+
+
+
+<p>맥은 윈도우처럼 단순히 퍼센트 배율을 보는 방식보다, <strong>어떻게 보이게 할지</strong>를 선택하는 느낌에 가깝습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>기본값으로 두거나</li>
+
+
+
+<li><strong>더 큰 텍스트</strong> 방향으로 한 칸 이동</li>
+
+
+
+<li>가능하다면 <strong>2560×1440처럼 보임</strong> 설정을 우선 고려</li>
+</ul>
+
+
+
+<p>이 설정은 흔히 말하는 <strong>QHD 크기 + 4K 선명도</strong> 조합이라서, 4K 모니터를 가장 편하게 쓰는 세팅으로 자주 추천됩니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">배율이 애매하다면 BetterDisplay도 방법입니다</h3>
+
+
+
+<p>맥 기본 단계만으로는 조금 애매하다고 느껴질 때가 있습니다. 그럴 때는 <strong>BetterDisplay</strong> 같은 앱으로 표시 배율을 조금 더 세밀하게 조정할 수 있습니다.</p>
+
+
+
+<p>정해진 단계 외에도 더 미세하게 손볼 수 있어서, 4K 외장 모니터를 오래 쓰는 분들은 꽤 만족하는 편입니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">맥에서 글씨가 얇게 느껴질 때</h3>
+
+
+
+<p>맥은 외장 모니터 연결 시 글씨가 윈도우보다 조금 얇게 느껴진다는 이야기도 많습니다. 이럴 때는 먼저 배율을 한 단계 키워보고, 그래도 눈이 피로하면 BetterDisplay 같은 도구로 미세 조정을 해보는 편이 현실적입니다.</p>
+
+
+
+<p>일부 고급 사용자는 폰트 스무딩 관련 숨은 설정을 직접 조정하기도 하지만, 이건 초보자보다는 시스템 설정에 익숙한 분들에게 더 맞는 방법입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">이건 하지 마세요!</h2>
+
+
+
+<ul class="wp-block-list">
+<li>해상도를 1920×1080으로 낮추기</li>
+
+
+
+<li>애매한 비권장 배율을 억지로 쓰기</li>
+
+
+
+<li>모니터 자체 확대 기능으로만 해결하려고 하기</li>
+</ul>
+
+
+
+<p>특히 4K 모니터에서 해상도를 낮춰버리면, 글씨는 커질 수 있어도 화면 선명도가 확 떨어집니다. 그래서 가장 좋은 방법은 <strong>해상도는 유지하고 배율만 조정하는 것</strong>입니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>요약하면, 4K의 장점은 그대로 살리고 글씨만 편하게 보는 방향이 맞습니다.</p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">글씨가 여전히 흐릿하게 보일 때 체크할 것</h2>
+
+
+
+<ul class="wp-block-list">
+<li>윈도우 ClearType 설정 확인</li>
+
+
+
+<li>앱별 DPI 재정의 적용 여부 확인</li>
+
+
+
+<li>그래픽 드라이버 업데이트</li>
+
+
+
+<li>모니터 OSD에서 샤프니스나 확대 기능이 과하게 들어가 있지 않은지 확인</li>
+
+
+
+<li>케이블 및 포트 연결 방식 확인 (DisplayPort가 있다면 DP 연결이 더 안정적이고 선명합니다)</li>
+</ul>
+
+
+
+<p>특히 오래된 프로그램은 운영체제 배율을 깔끔하게 따라오지 못해서, 전체 화면은 괜찮은데 특정 앱만 유독 흐릿하게 보이는 경우가 있습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">노트북 + 4K 모니터 연결 시 주의사항</h2>
+
+
+
+<p>노트북과 외부 모니터는 배율이 각각 따로 적용됩니다. 그래서 노트북 화면에서는 괜찮았는데, 4K 외장 모니터만 연결하면 갑자기 글씨가 너무 작아 보일 수 있습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>노트북: 125%</strong></li>
+
+
+
+<li><strong>4K 외부 모니터: 150% 이상</strong></li>
+</ul>
+
+
+
+<p>이런 식으로 <strong>디스플레이마다 따로 설정</strong>해줘야 눈이 편합니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">설정만 바꿨는데도 이상하다면..<br>혹시 내 케이블이 4K를 지원하지 않는걸까요?</h2>
+
+
+
+<p>분명 4K 모니터인데 마우스 커서가 묘하게 끊기거나(30Hz), 글자 주변에 그림자가 생긴다면 십중팔구 <strong>구형 케이블</strong>이 범인입니다. 4K의 막대한 데이터량을 감당하지 못해 시스템이 스스로 성능을 낮춰버린 거죠.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>4K 모니터 성능을 제대로 활용하려면 전송 대역폭이 중요합니다.<br>DP 1.4 이상 또는 HDMI 2.1 케이블을 사용하는지 꼭 확인하세요.</p>
+</blockquote>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><td><strong>최적화 순위</strong></td><td><strong>연결 방식</strong></td><td><strong>추천 이유</strong></td></tr></thead><tbody><tr><td><strong>1위</strong></td><td><strong>DP to DP (1.4 이상)</strong></td><td>가장 안정적인 연결 방식.<br>4K 144Hz 고주사율까지 대응 가능하고, 윈도우 / 맥 모두에서 호환성과 선명도가 가장 좋습니다.</td></tr><tr><td><strong>2위</strong></td><td><strong>Thunderbolt / USB-C</strong></td><td><strong>맥북 및 노트 유저 필수.</strong> 케이블 하나로 화면 출력 + 충전 + 데이터 전송까지 가능해서<br>데스크 환경이 깔끔해집니다.</td></tr><tr><td><strong>3위</strong></td><td><strong>HDMI 2.1</strong></td><td><strong>콘솔(PS5)이나 최신 그래픽카드.</strong> 4K 120Hz를 지원하지만, 케이블 규격(가짜 2.1 주의)을 잘 따져야 해.</td></tr></tbody></table></figure>
+
+
+
+<p>배율 설정은 맞는데도 화면이 묘하게 답답하거나,<br>원하는 해상도나 주사율이 제대로 나오지 않는 경우가 있습니다.</p>
+
+
+
+<p>이럴 땐 설정 문제가 아니라 케이블이나 포트 규격이 원인일 수 있습니다.</p>
+
+
+
+<p>노트북이나 모니터는 HDMI가 기본인 경우가 많지만,<br>최신 기기라면 DisplayPort 또는 USB-C(DP 출력)를 지원하는 경우도 많습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>DisplayPort 1.4 지원 여부(지금 꽂혀있는 케이블에 &#8216;1.4&#8217; 혹은 &#8216;8K 지원&#8217;이라고 적혀 있나요?)</li>
+
+
+
+<li>HDMI 2.1 지원 여부(케이블 + 포트 모두)</li>
+
+
+
+<li>노트북 USB-C 포트의 DP 출력 지원 여부</li>
+</ul>
+
+
+
+<p>특히 4K 모니터 성능을 제대로 쓰려면, 설정만 볼 게 아니라 <strong>케이블과 포트 규격</strong>도 같이 확인하는 게 좋습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">최적 4K 케이블 구매 가이드</h3>
+
+
+
+<p>자신의 모니터와 데스크탑 or 노트북 규격을 확인하시고 아래에서 맞는 걸 구매하세요.<br>케이블은 너무 저가 제품보다, 검증된 브랜드 제품을 사용하는 것이 안정적입니다! 혹시나 안 맞을시 반품 및 교환이 수월하도록 쿠팡 제품으로 골라보았습니다.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>데스크탑 유저</strong> </h4>
+
+
+
+<p>고민 말고 <strong>DP 1.4</strong>로 가세요. 호환성 스트레스가 제로입니다.<br></p>
+
+
+
+<p><strong><a href="https://link.coupang.com/a/d9ahPJ" target="_blank" rel="noopener">👉 쿠팡 유그린 프리미엄 16k DP to DP 케이블(2만원대)</a></strong></p>
+
+
+
+<a href="https://link.coupang.com/a/d9ajfS" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img1a.coupangcdn.com/image/affiliate/banner/1092fe7b215112490cebc0606ce2f652@2x.jpg" alt="유그린 프리미엄 16K DP to DP 2.1 케이블, 1개, 2m" width="120" height="240"></a>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<h4 class="wp-block-heading"><strong>맥북/노트북 유저</strong></h4>
+
+
+
+<p>허브 쓰지 마시고 <strong>C to DP 1.4</strong> 단일 케이블 쓰세요. 화면 깜빡임이 사라집니다</p>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://link.coupang.com/a/d9asQU" target="_blank" rel="noopener"><strong>👉쿠팡 유그린 울트라 8K C타입 DP V1.4 미러링 케이블(2만원대)</strong></a></p>
+
+
+
+<a href="https://link.coupang.com/a/d9atdG" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://image5.coupangcdn.com/image/affiliate/banner/8ce20b57054088f001cc04a26b94bf69@2x.jpg" alt="유그린 울트라 8K C타입 DP V1.4 미러링 케이블, 1개, 1m" width="120" height="240"></a>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p></p>
+
+
+
+<h4 class="wp-block-heading"><strong>PS5/게이밍 유저</strong></h4>
+
+
+
+<p>반드시 <strong>&#8216;초고속(Ultra High Speed)&#8217; 인증</strong> 마크가 있는 HDMI 2.1을 고르세요.</p>
+
+
+
+<p></p>
+
+
+
+<p><strong><a href="https://link.coupang.com/a/d9ay4H" target="_blank" rel="noopener">👉 쿠팡 코드웨이 브랜드샵 코드웨이 HDMI 2.1v UHD 8K 케이블(8천~9천원대)</a></strong></p>
+
+
+
+<a href="https://link.coupang.com/a/d9azyw" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://image9.coupangcdn.com/image/affiliate/banner/9604e647cd340703a2ac844f4eb83ff4@2x.jpg" alt="코드웨이 HDMI 2.1v UHD 8K 케이블, 1개, 1.5m" width="120" height="240"></a>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>저도 처음엔 모니터가 잘못된 줄 알았는데, 결국은 설정과 케이블 문제였습니다 ㅋㅋ</p>
+
+
+
+<p>결론적으로 4K 모니터는 불편한 게 아니라, <strong>내 눈에 맞는 배율을 안 찾았을 때만</strong> 불편합니다.</p>
+
+
+
+<p>해상도는 유지하고 배율만 제대로 맞추면, 선명함도 챙기고 가독성도 훨씬 편하게 가져갈 수 있습니다.</p>
+
+
+
+<p>&#8220;이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.&#8221;</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">4K가 더 궁금하시다면</h5>
+
+
+
+<p><a href="https://spacecatx.me/4k-premiere-after-effects-ui-too-small-fix/">4K 프리미어·에프터이펙트 타임라인 너무 작을 때 해결 방법 (UI 크기 설정)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/disneyplus-macbook-4k/">맥북에서 디즈니플러스 4K 안 되는 이유 (의외의 해결 방법)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/apple-tv-4k-remote-volume-not-working/">Apple TV 4K 리모콘 볼륨 조절 안됨? 이렇게 해보세요</a></p>
+
+
+
+<p></p>

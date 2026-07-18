@@ -1,0 +1,362 @@
+
+<h2 class="wp-block-heading">유튜브 로그인 실패<br>구글 계정은 멀쩡한데 왜 유튜브만 로그인 안 될까요?</h2>
+
+
+
+<p>나란 유튜브 처돌이. 평소처럼 하루 3시간 유튜브를 시청하기 위해 접속했는데, 갑자기 로그아웃되어 있는 겁니다.</p>
+
+
+
+<p>다시 로그인하면 되겠지 싶어서 비밀번호를 입력했는데, 이런 메시지만 반복되더군요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>로그인할 수 없음</li>
+
+
+
+<li>알 수 없는 오류가 발생했습니다</li>
+
+
+
+<li>로그인 화면으로 다시 돌아감</li>
+</ul>
+
+
+
+<p>더 이상한 건 지메일은 잘 열리고, 구글 드라이브도 멀쩡한데 <strong>유튜브만 로그인 안 됨</strong> 상태였다는 겁니다. 이러면 진짜 헷갈리죠. 구글 계정 문제면 지메일도 안 돼야 할 것 같은데, 유튜브만 안 되니까요.</p>
+
+
+
+<p>이럴 때는 계정 자체가 망가졌다기보다, 브라우저 쿠키, 로그인 세션, 확장 프로그램, 기기 시간 설정 같은 쪽을 먼저 확인하는 게 좋습니다.</p>
+
+
+
+<p><strong>유튜브 로그인 안됨</strong> 문제가 지메일이나 구글 드라이브는 정상인데 유튜브에서만 반복된다면, 아래 순서대로 확인해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">1. 시크릿 모드에서 먼저 로그인해보세요</h2>
+
+
+
+<p>가장 먼저 할 일은 시크릿 모드에서 유튜브 로그인을 시도해보는 것입니다. 이게 제일 빠른 진단 방법입니다.</p>
+
+
+<pre class="wp-block-code"><code>Chrome: Ctrl + Shift + N
+Mac: Command + Shift + N</code></pre>
+
+
+<p>새 시크릿 창에서 <strong>youtube.com</strong>에 접속한 뒤 다시 로그인해보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>시크릿 모드에서는 로그인 성공</strong> > 계정 문제보다 브라우저 쿠키나 확장 프로그램 문제일 가능성이 큼</li>
+
+
+
+<li><strong>시크릿 모드에서도 로그인 실패</strong> > 서버 문제나 계정 보안 문제까지 같이 확인 필요</li>
+</ul>
+
+
+
+<p>시크릿 모드에서 바로 로그인이 된다면, 계정이 잘못된 게 아니라 기존 브라우저에 쌓인 쿠키나 로그인 정보가 꼬였을 가능성이 큽니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">2. 새 Chrome 프로필에서 로그인해보기</h2>
+
+
+
+<p>시크릿 모드로도 애매하다면 새 Chrome 프로필을 만들어 로그인해보는 방법도 있습니다. 이건 시크릿 모드보다 한 단계 더 분리된 테스트라고 보면 됩니다.</p>
+
+
+
+<p>새 프로필은 기존 브라우저 프로필의 쿠키, 확장 프로그램, 로그인 상태와 분리된 환경이라서 브라우저 쪽 문제인지 확인하는 데 도움이 됩니다.</p>
+
+
+<pre class="wp-block-code"><code>Chrome 오른쪽 위 프로필 아이콘 &gt; 추가 &gt; 새 프로필 만들기 &gt; youtube.com 접속 후 로그인</code></pre>
+
+
+<p>새 프로필에서는 유튜브 로그인이 정상적으로 된다면, 기존 프로필에 쌓인 쿠키나 확장 프로그램 충돌 가능성이 큽니다. 이 경우 기존 프로필에서 YouTube·Google 관련 쿠키를 지우거나 확장 프로그램을 하나씩 꺼보는 쪽으로 확인하면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">3. 유튜브와 구글 관련 쿠키만 선택 삭제해보세요</h2>
+
+
+
+<p>전체 쿠키를 다 삭제하는 방법도 있지만, 저는 이 방법은 별로 추천하지 않습니다. 자동 로그인 상태가 전부 풀려서 갑자기 모든 사이트에서 다시 로그인해야 할 수 있거든요.</p>
+
+
+
+<p>대신 <strong>유튜브와 구글 관련 쿠키만 선택 삭제</strong>하는 쪽이 더 낫습니다.</p>
+
+
+<pre class="wp-block-code"><code>Chrome 설정 &gt; 개인정보 및 보안 &gt; 쿠키 및 기타 사이트 데이터 &gt; 모든 사이트 데이터 보기</code></pre>
+
+
+<p>그다음 검색창에 아래 주소를 각각 입력해서 관련 항목만 삭제해보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>youtube.com</li>
+
+
+
+<li>google.com</li>
+
+
+
+<li>accounts.google.com</li>
+</ul>
+
+
+
+<p>이 작업은 브라우저에 남아 있던 만료된 로그인 토큰이나 꼬인 인증 정보를 정리하는 과정이라고 보면 됩니다. 삭제 후에는 브라우저를 완전히 종료했다가 다시 실행한 뒤 유튜브 로그인을 다시 시도해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">4. YouTube Music이나 다른 구글 서비스에서 먼저 로그인해보기</h2>
+
+
+
+<p>유튜브 메인 화면에서만 로그인이 계속 튕긴다면, YouTube Music이나 Gmail, Google Maps 같은 다른 구글 서비스에서 먼저 로그인해보는 방법도 있습니다.</p>
+
+
+<pre class="wp-block-code"><code>music.youtube.com 접속 &gt; 구글 계정 로그인 &gt; youtube.com 다시 접속</code></pre>
+
+
+<p>같은 브라우저에서 구글 계정 로그인이 정상적으로 잡히면, 유튜브 메인 페이지에서도 로그인 상태가 다시 반영되는 경우가 있습니다.</p>
+
+
+
+<p>꼭 YouTube Music이 아니어도 됩니다. Gmail, Google Maps, Google 계정 페이지처럼 다른 구글 서비스에서 먼저 로그인한 뒤, 오른쪽 위 앱 메뉴에서 YouTube로 이동해보는 방식도 시도해볼 수 있습니다.</p>
+
+
+
+<p>이 방법은 계정 자체 문제인지, 유튜브 페이지 쪽 로그인 흐름 문제인지 구분할 때 도움이 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">5. 광고 차단·보안 확장 프로그램을 잠시 꺼보세요</h2>
+
+
+
+<p>의외로 많이 놓치는 부분입니다. 광고 차단이나 보안 확장 프로그램이 로그인에 필요한 구글 스크립트까지 같이 막아버리는 경우가 있습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>AdBlock</li>
+
+
+
+<li>uBlock Origin</li>
+
+
+
+<li>보안 확장 프로그램</li>
+
+
+
+<li>추적 차단 확장 프로그램</li>
+
+
+
+<li>개인정보 보호 계열 확장 프로그램</li>
+</ul>
+
+
+
+<p>이런 확장 프로그램들이 로그인 화면 자체를 막지는 않아도, 인증 과정에서 필요한 스크립트를 차단해서 유튜브 로그인 실패를 유발할 수 있습니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li>Chrome 확장 프로그램 관리 화면으로 들어갑니다.</li>
+
+
+
+<li>광고 차단 또는 보안 확장 프로그램을 잠시 꺼둡니다.</li>
+
+
+
+<li>브라우저를 다시 실행합니다.</li>
+
+
+
+<li>유튜브 로그인을 다시 시도합니다.</li>
+</ol>
+
+
+
+<p>이때 갑자기 로그인이 된다면, 원인은 계정 문제가 아니라 확장 프로그램 충돌일 가능성이 높습니다. 계속 사용하고 싶은 확장 프로그램이라면 유튜브나 구글 계열 도메인을 예외 처리하는 방법도 같이 확인해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">6. PC나 휴대폰 시간 설정도 확인하세요</h2>
+
+
+
+<p>의외로 기기 시간이나 시간대 설정이 틀어져 있으면 로그인이나 계정 동기화가 제대로 되지 않을 수 있습니다. 특히 VPN을 쓰거나 해외 이동 후 시간이 꼬인 상태라면 한 번 확인해보세요.</p>
+
+
+<pre class="wp-block-code"><code>Windows: 설정 &gt; 시간 및 언어 &gt; 날짜 및 시간 &gt; 자동으로 시간 설정 켜기
+Android: 설정 &gt; 시스템 &gt; 날짜 및 시간 &gt; 자동 시간 설정 켜기</code></pre>
+
+
+<p>시간 설정을 바꾼 뒤에는 브라우저나 유튜브 앱을 완전히 종료했다가 다시 실행해보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">그래도 안 되면 계정 보안도 확인하세요</h2>
+
+
+
+<p>대부분은 브라우저나 앱 문제지만, 아래 상황이라면 구글 계정 보안도 확인해보는 것이 좋습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>다른 기기에서도 로그인 불가</li>
+
+
+
+<li>구글에서 보안 경고 메일을 받음</li>
+
+
+
+<li>최근 로그인 기록에 모르는 기기나 해외 IP가 보임</li>
+
+
+
+<li>비밀번호가 갑자기 변경되어 있음</li>
+
+
+
+<li>내가 설정하지 않은 복구 이메일이나 복구 전화번호가 보임</li>
+</ul>
+
+
+
+<p>이 경우에는 바로 비밀번호를 변경하고, 2단계 인증을 켜두는 것이 좋습니다. 가능하면 구글 계정의 보안 활동 기록도 같이 확인해보세요.</p>
+
+
+
+<p>Google 계정 보안 점검은 아래 공식 페이지에서 확인할 수 있습니다.</p>
+
+
+
+<p><a href="https://myaccount.google.com/security" target="_blank" rel="noreferrer noopener">Google 계정 보안 확인 페이지</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<p><strong>유튜브 로그인 안됨</strong> 문제가 지메일이나 구글 드라이브는 정상인데 유튜브에서만 반복된다면, 계정 자체 문제보다는 브라우저 쿠키, 로그인 세션, 확장 프로그램 문제일 가능성이 큽니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>시크릿 모드에서 먼저 로그인 시도</li>
+
+
+
+<li>새 Chrome 프로필에서 테스트</li>
+
+
+
+<li>유튜브와 구글 관련 쿠키만 선택 삭제</li>
+
+
+
+<li>YouTube Music이나 다른 구글 서비스에서 먼저 로그인</li>
+
+
+
+<li>광고 차단·보안 확장 프로그램 잠시 중지</li>
+
+
+
+<li>PC나 휴대폰 시간 설정 확인</li>
+
+
+
+<li>그래도 안 되면 계정 보안 점검</li>
+</ul>
+
+
+
+<p>괜히 불안해서 계정 문제부터 의심하지 말고, 먼저 위 순서대로 차근차근 확인해보세요. 생각보다 단순한 인증 충돌 때문에 유튜브만 로그인 안 되는 경우가 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">유튜브가 더 궁금하시다면</h5>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-spacecatx wp-block-embed-spacecatx"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="uMjOsWIFf7"><a href="https://spacecatx.me/youtube-premium-ads-showing/">유튜브 프리미엄인데 광고 나옴? 해결 방법 정리</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;유튜브 프리미엄인데 광고 나옴? 해결 방법 정리&#8221; &#8212; SpaceCatX" src="https://spacecatx.me/youtube-premium-ads-showing/embed/#?secret=EmOsTK0d7S#?secret=uMjOsWIFf7" data-secret="uMjOsWIFf7" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<p><a href="https://spacecatx.me/iphone-ipad-youtube-smart-downloads/">아이폰, 아이패드 유튜브에서 갑자기 오프라인 저장되는 이유? 스마트 오프라인 저장 끄는 법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/chromecast-youtube-login-error/">크롬캐스트(스마트 TV) 유튜브 로그인 안됨? 로그인 튕김 해결 방법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/youtube-not-a-robot-sign-in-loop/">유튜브 “Sign in to confirm you’re not a robot” 로봇이 아닙니다 무한 반복 해결 방법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/youtube-search-history-error-fix/">유튜브 기록 검색했는데 ‘문제가 발생했습니다’ 오류 뜰 때 해결법(유튜브 something went wrong)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/youtube-premium-lite-price/">유튜브 저렴하게 이용하는 방법? 유튜브 라이트 가격과 프리미엄 차이</a></p>

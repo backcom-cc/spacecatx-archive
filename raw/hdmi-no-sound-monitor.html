@@ -1,0 +1,246 @@
+
+<h4 class="wp-block-heading">HDMI 연결 소리 안남? <br>HDMI로 연결했는데 화면은 나오고 소리만 안 난다면, <br>먼저 윈도우 출력 장치를 확인하세요.</h4>
+
+
+
+<p>이 문제는 모니터 고장보다 출력 장치가 바뀌었거나, HDMI 오디오 장치가 제대로 잡히지 않았을 때 더 자주 발생합니다. 아래 상황 중 하나에 해당한다면, 표시한 순서부터 확인해보세요.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>상황</th><th>먼저 의심할 원인</th></tr></thead><tbody><tr><td>모니터를 바꾼 뒤 갑자기 소리가 안 난다</td><td>출력 장치가 새 모니터로 바뀐 경우 → 1번</td></tr><tr><td>노트북을 TV에 연결했는데 소리만 안 나온다</td><td>TV가 출력 장치로 잡히지 않았거나 HDMI 오디오가 꼬인 경우 → 1번, 3번</td></tr><tr><td>사운드바나 외부 스피커를 쓰고 있다</td><td>기존 스피커 대신 모니터가 선택된 경우 → 1번</td></tr><tr><td>듀얼 모니터를 연결한 뒤 소리가 사라졌다</td><td>소리가 다른 모니터나 HDMI 장치로 나가는 경우 → 1번</td></tr><tr><td>DP에서 HDMI로 바꿔 꽂은 뒤 소리가 안 난다</td><td>HDMI 오디오 장치가 새로 잡히지 않은 경우 → 2번, 3번</td></tr><tr><td>그래픽 드라이버 업데이트 후 HDMI 소리만 안 나온다</td><td>HDMI 오디오 드라이버 문제 가능성 → 3번</td></tr><tr><td>모니터에 스피커가 없다</td><td>출력 장치가 스피커 없는 모니터로 잡혔는지 확인 필요 → 1번</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">HDMI 연결했는데 소리가 안 나는 이유</h3>
+
+
+
+<p>이 증상은 보통 아래 다섯 가지 안에서 해결되는 경우가 많습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>출력 장치 설정 문제</li>
+
+
+
+<li>소리 제어판에서 장치가 비활성화된 경우</li>
+
+
+
+<li>그래픽카드의 HDMI 오디오 드라이버 문제</li>
+
+
+
+<li>모니터 자체 음소거 또는 볼륨 문제</li>
+
+
+
+<li>HDMI 케이블 연결 불량</li>
+</ul>
+
+
+
+<p>가장 흔한 원인은 역시 <strong>출력 장치가 엉뚱하게 바뀌는 경우</strong>입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">1. 출력 장치 기본값 확인</h3>
+
+
+
+<p>윈도우가 가끔 기존 스피커나 사운드바 대신, 새로 연결한 모니터를 기본 출력 장치로 잡아버릴 때가 있습니다. 이 경우 화면은 잘 나오는데 소리만 다른 곳으로 나가게 됩니다.</p>
+
+
+
+<p>확인 방법은 아래와 같습니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li>작업표시줄 오른쪽 아래 <strong>스피커 아이콘</strong>을 우클릭합니다.</li>
+
+
+
+<li><strong>소리 설정</strong>으로 들어갑니다.</li>
+
+
+
+<li><strong>출력 장치 선택</strong>에서 현재 사용 중인 스피커 또는 사운드바가 선택되어 있는지 확인합니다.</li>
+</ol>
+
+
+
+<p>새 모니터 이름이 잡혀 있거나, 평소 쓰지 않던 장치가 선택돼 있다면 그게 원인일 가능성이 큽니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">2. 소리 제어판에서 사용 안 함 해제</h3>
+
+
+
+<p>설정 화면에서는 장치가 보이는데 실제로 소리가 안 날 때는, 제어판 쪽에서 장치가 비활성화돼 있는 경우도 있습니다.</p>
+
+
+
+<p>이럴 때는 아래처럼 확인해 보면 됩니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li><code>Win + R</code>을 누릅니다.</li>
+
+
+
+<li><code><strong>mmsys.cpl</strong></code>을 입력하고 실행합니다.</li>
+
+
+
+<li><strong>재생</strong> 탭으로 들어갑니다.</li>
+
+
+
+<li>빈 공간을 우클릭한 뒤 <strong>사용할 수 없는 장치 표시</strong>를 체크합니다.</li>
+</ol>
+
+
+
+<p>회색으로 비활성화된 장치가 보이면 우클릭해서 <strong>사용</strong>으로 바꿔 주세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">3. 그래픽카드 HDMI 오디오 드라이버 재설치</h3>
+
+
+
+<p>HDMI 소리는 단순히 케이블만의 문제가 아니라, 그래픽카드의 오디오 드라이버가 함께 관여합니다. 그래서 드라이버 업데이트 이후 HDMI 소리만 꼬이는 경우도 있습니다.</p>
+
+
+
+<p>확인 순서는 아래와 같습니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>장치 관리자</strong>를 엽니다.</li>
+
+
+
+<li><strong>사운드, 비디오 및 게임 컨트롤러</strong> 항목으로 들어갑니다.</li>
+
+
+
+<li><code>NVIDIA High Definition Audio</code> 또는 <code>AMD High Definition Audio</code>를 찾습니다.</li>
+
+
+
+<li>우클릭 후 <strong>디바이스 제거</strong>를 선택합니다.</li>
+
+
+
+<li>그다음 상단 메뉴에서 <strong>하드웨어 변경 사항 검색</strong>을 눌러 다시 잡히는지 확인합니다.</li>
+</ol>
+
+
+
+<p>HDMI 오디오가 다시 정상 등록되면서 소리가 돌아오는 경우가 있습니다.</p>
+
+
+
+<p>윈도우 오디오 문제 전반은 Microsoft 공식 도움말의 <a href="https://support.microsoft.com/en-us/windows/fix-sound-or-audio-problems-in-windows-73025246-b61c-40fb-671a-2535c7cd56c8" target="_blank" rel="noreferrer noopener">Windows 소리 또는 오디오 문제 해결 안내</a>도 함께 참고할 수 있습니다.</p>
+
+
+
+<p>드라이버 업데이트나 롤백이 필요하다면 Microsoft 공식 도움말의 <a href="https://support.microsoft.com/en-us/windows/update-drivers-through-device-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6" target="_blank" rel="noreferrer noopener">장치 관리자에서 드라이버 업데이트하는 방법</a>을 참고하세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">4. 모니터 자체 볼륨 또는 음소거 확인</h3>
+
+
+
+<p>만약 모니터에 스피커가 달린 모델이라면, PC 설정이 아니라 모니터 자체 설정 문제일 수도 있습니다. 특히 출력이 모니터로 바뀐 상태인데 모니터 볼륨이 0이거나 음소거돼 있으면 당연히 소리가 안 납니다.</p>
+
+
+
+<p>모니터 하단이나 뒷면 버튼으로 OSD 메뉴(모니터에 달린 버튼으로 여는 메뉴)를 열고, 아래 항목을 확인해 보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Audio</li>
+
+
+
+<li>Volume</li>
+
+
+
+<li>Mute</li>
+</ul>
+
+
+
+<p>생각보다 이 설정이 원인인 경우가 많습니다!</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">5. HDMI 케이블 다시 꽂기</h3>
+
+
+
+<p>HDMI는 영상과 음성을 함께 보내는 규격이라, 케이블이 애매하게 연결되면 화면은 잘 나오는데 소리만 이상하게 안 잡히는 경우가 있습니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>영상은 나오는데 소리만 안 날 때는, 케이블을 완전히 뽑았다가 다시 꽂는 것만으로 해결되는 경우도 생각보다 많습니다.</p>
+</blockquote>
+
+
+
+<p>본체와 모니터 양쪽 HDMI 케이블을 완전히 분리한 뒤 5초 정도 기다렸다가, 다시 끝까지 확실하게 꽂아 보세요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">정리</h3>
+
+
+
+<p>저는 모니터를 4K로 교체한 직후 이 문제를 겪었는데, 원인은 1번이었습니다. 사운드바를 따로 쓰고 있었는데 PC가 출력 장치를 사운드바 대신 새 모니터로 바꿔버린 상태였고, 소리는 스피커도 없는 모니터 쪽으로 나가고 있었던 거죠. 출력 장치만 다시 잡아주니 바로 해결됐습니다.</p>
+
+
+
+<p><strong>HDMI 연결 후 소리가 안 난다면 고장보다 설정을 먼저 의심하세요.</strong> 대부분은 출력 장치가 바뀌었거나 HDMI 오디오가 제대로 잡히지 않은 게 원인입니다.</p>
+
+
+
+<p></p>

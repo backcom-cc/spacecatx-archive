@@ -1,0 +1,360 @@
+
+<p>유튜브를 보려고 로그인했는데 갑자기 이런 메시지가 계속 뜹니다.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Sign in to confirm you&#8217;re not a robot</p>
+</blockquote>
+
+
+
+<p>로그인을 해도 또 나오고, 다시 로그인해도 또 나오고… &#8220;아니 나 로봇 아닌데요? 내가 뭘 잘못했어?&#8221; 싶은 상황이 반복됩니다. 이른바 <strong>유튜브 로봇 인증 무한 반복</strong> 현상입니다. 생각보다 꽤 많은 사람들이 겪는 문제인데, 대부분 몇 가지 원인 때문에 발생하고 해결 방법도 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">Sign in to confirm you&#8217;re not a robot, 이게 무슨 뜻인가요?</h2>
+
+
+
+<p>이 메시지는 유튜브가 사용자를 진짜 로봇이라고 생각한다는 뜻은 아닙니다. 정확히는 <strong>현재 접속 환경이 자동화 트래픽처럼 보이거나, 로그인 인증 정보가 정상적으로 확인되지 않을 때</strong> 뜨는 보안 확인 메시지예요. 내가 뭔가 잘못한 게 아니라, 구글 입장에서 접속 환경이 조금 수상하게 보인 거라고 생각하면 됩니다.</p>
+
+
+
+<p>이런 상황에서 특히 많이 나타납니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>VPN이나 프록시를 사용 중일 때</li>
+
+
+
+<li>회사, 학교, 카페 같은 공용 네트워크를 쓸 때</li>
+
+
+
+<li>브라우저 쿠키나 캐시가 꼬였을 때</li>
+
+
+
+<li>광고 차단 확장 프로그램이 인증 스크립트를 막을 때</li>
+</ul>
+
+
+
+<p>구글 입장에서 이런 접속이 &#8220;사람인지 자동화 봇인지&#8221; 애매하게 보이면 인증을 한 번 더 요구합니다. 문제는 이 인증이 제대로 처리되지 않으면 <strong>로그인 &gt; 로봇 확인 &gt; 로그인 &gt; 로봇 확인</strong> 루프가 반복된다는 거예요. 보통 한두 가지 원인을 해결하면 바로 끊기는 경우가 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">브라우저 문제인지 먼저 확인하세요</h2>
+
+
+
+<p>같은 계정인데 특정 브라우저에서만 반복된다면 브라우저 설정이나 확장 프로그램 문제일 수 있어요. 본격적인 설정 변경 전에 먼저 이렇게 확인해보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Chrome에서 안 되면 Edge나 Firefox로 접속</li>
+
+
+
+<li>일반 창에서 안 되면 새 시크릿 창에서 접속</li>
+
+
+
+<li>PC 웹에서 안 되면 모바일 유튜브 앱에서 확인</li>
+</ul>
+
+
+
+<p>다른 브라우저나 유튜브 앱에서는 정상이라면 계정 자체 문제보다는 <strong>해당 브라우저의 쿠키, 캐시, 확장 프로그램 문제</strong>일 가능성이 높습니다. 반대로 어디서든 다 반복된다면 네트워크 또는 계정 쪽 문제일 가능성이 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">해결 방법</h2>
+
+
+
+<h3 class="wp-block-heading">VPN이나 공용 네트워크를 쓰고 있다면</h3>
+
+
+
+<p>VPN을 쓰면 실제 접속 위치와 IP 정보가 평소와 다르게 보입니다. 거기다 같은 VPN 서버를 여러 사람이 함께 쓰면, 구글 입장에서는 같은 IP에서 비정상적으로 많은 요청이 들어오는 것처럼 보일 수 있어요. Proton VPN도 VPN 사용 시 CAPTCHA가 더 자주 뜰 수 있다고 안내할 정도입니다.</p>
+
+
+
+<p>특히 이런 환경에서 더 자주 발생해요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>VPN 또는 회사 VPN 사용 중</li>
+
+
+
+<li>학교, 회사, 카페, 도서관 공용 와이파이</li>
+
+
+
+<li>해외 서버로 접속 중</li>
+
+
+
+<li>프록시 사용 중</li>
+</ul>
+
+
+
+<p>VPN을 끄거나 다른 서버로 바꾸거나, 모바일 핫스팟으로 접속해보세요. VPN이 원인인 경우 끄는 것만으로 바로 해결되는 경우가 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">쿠키는 전체 삭제 말고 유튜브/구글만 먼저</h3>
+
+
+
+<p>쿠키 정보가 꼬이면 로그인 인증이 정상적으로 처리되지 않을 수 있어요. 그렇다고 쿠키 전체를 삭제하면 모든 사이트 로그인이 풀려서 번거롭습니다. 아래 사이트 데이터만 먼저 지워보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>youtube.com</li>
+
+
+
+<li>google.com</li>
+
+
+
+<li>accounts.google.com</li>
+</ul>
+
+
+
+<p>Chrome 기준 경로는 대략 이렇습니다.</p>
+
+
+
+<pre class="wp-block-code"><code>설정 &gt; 개인 정보 보호 및 보안 &gt; 사이트 설정 &gt; 모든 사이트 데이터 및 권한 보기 &gt; youtube.com / google.com 검색 &gt; 데이터 삭제</code></pre>
+
+
+
+<p>이후 브라우저를 완전히 종료했다가 다시 열고 로그인해보세요. 쿠키 삭제 직후 바로 로그인을 반복하면 효과가 없을 수 있으니, 브라우저 재시작 후 시도하는 게 포인트입니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">광고 차단 확장 프로그램을 잠시 꺼보세요</h3>
+
+
+
+<p>AdBlock, uBlock Origin, Brave Shields 같은 광고 차단 기능이 유튜브의 인증 과정과 충돌할 수 있어요. 특히 reCAPTCHA나 계정 인증 화면에서 스크립트가 제대로 실행되지 않으면 로그인 확인이 반복될 수 있습니다. Google 도움말에서도 reCAPTCHA가 표시되지 않을 때 JavaScript가 켜져 있는지, 브라우저가 reCAPTCHA를 지원하는지 확인하라고 안내해요.</p>
+
+
+
+<p>아래 순서로 확인해보세요.</p>
+
+
+
+<ol class="wp-block-list">
+<li>유튜브에서만 광고 차단 끄기</li>
+
+
+
+<li>브라우저 새로고침</li>
+
+
+
+<li>로그아웃 후 다시 로그인</li>
+
+
+
+<li>그래도 안 되면 확장 프로그램 전체 비활성화 후 테스트</li>
+</ol>
+
+
+
+<p>광고 차단을 영구적으로 끄라는 게 아니라, 원인이 확장 프로그램인지 확인하기 위한 테스트입니다. 확장 프로그램을 끄고 나서 정상이 되면 해당 확장이 원인인 거예요.<br><br><a href="https://protonvpn.com/support/avoid-captchas" target="_blank" rel="noopener">VPN 사용 중 CAPTCHA를 줄이는 방법</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">다른 네트워크로 접속해보기</h3>
+
+
+
+<p>회사나 공용 와이파이에서 같은 IP를 많은 사람이 공유하면 구글이 해당 IP를 의심할 수 있어요. 이럴 때는 모바일 핫스팟이나 다른 와이파이로 접속해보세요. 환경을 바꿨을 때 바로 정상이 된다면 원래 네트워크 IP 문제였을 가능성이 높습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">얼마나 기다려야 하나요?</h2>
+
+
+
+<p>VPN을 끄거나 네트워크를 바꾸면 대부분 바로 해결됩니다. 쿠키 삭제나 확장 프로그램 끄기도 보통 즉시 효과가 있어요.</p>
+
+
+
+<p>다만 구글 시스템이 해당 IP나 계정을 일시적으로 제한한 경우라면 <strong>24~48시간 정도 시간이 지나면 자동으로 풀리는 경우</strong>가 많습니다. 이 경우엔 억지로 계속 로그인을 반복하는 게 오히려 역효과예요. 구글 시스템이 더 수상한 접속으로 판단할 수 있거든요. 한두 가지 방법을 시도했는데도 안 되면 잠시 두고 다시 접속하는 편이 낫습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">반복된다면 구글 계정 보안도 확인하세요</h2>
+
+
+
+<p>로봇 인증이 한두 번이 아니라 계속 반복된다면 단순 오류가 아니라 계정 보안 확인이 필요할 수도 있어요. 아래 항목을 확인해보세요.</p>
+
+
+
+<ul class="wp-block-list">
+<li>최근 로그인한 기기 목록</li>
+
+
+
+<li>낯선 위치의 로그인 기록</li>
+
+
+
+<li>연결된 앱과 확장 프로그램</li>
+
+
+
+<li>2단계 인증 설정 여부</li>
+</ul>
+
+
+
+<p>평소와 다른 국가, 다른 기기, 모르는 브라우저 로그인이 보이면 비밀번호를 바꾸고 2단계 인증을 켜는 게 좋습니다. 2단계 인증을 켜두면 이런 인증 요구 자체가 줄어드는 경우도 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">자주 묻는 질문</h2>
+
+
+
+<p><strong>Q. 로봇이 아닌데 왜 계속 이 메시지가 뜨나요?</strong><br>내가 로봇이어서가 아니라 접속 환경이 평소와 달라 보여서입니다. VPN, 공용 네트워크, 쿠키 문제가 대표적인 원인이에요.</p>
+
+
+
+<p><strong>Q. VPN을 끄면 바로 해결되나요?</strong><br>VPN이 원인인 경우 끄는 것만으로 바로 해결되는 경우가 많습니다. VPN을 유지해야 한다면 서버를 다른 곳으로 바꿔보세요.</p>
+
+
+
+<p><strong>Q. 시크릿 창에서도 뜨나요?</strong><br>시크릿 창에서도 뜰 수 있습니다. 다만 시크릿 창에서는 확장 프로그램이 비활성화되는 경우가 많아서, 시크릿 창에서는 정상이라면 확장 프로그램이 원인일 가능성이 높아요.</p>
+
+
+
+<p><strong>Q. 쿠키를 지우면 로그인이 다 풀리나요?</strong><br>전체 쿠키를 지우면 그렇습니다. youtube.com과 google.com 데이터만 선택해서 삭제하면 다른 사이트 로그인은 유지됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<p>유튜브 로봇 인증이 반복된다면 대부분 VPN, 쿠키 문제, 광고 차단 확장 프로그램, 공용 네트워크가 원인입니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>브라우저 바꾸거나 시크릿 창으로 먼저 확인</li>
+
+
+
+<li>VPN 사용 중이라면 끄기</li>
+
+
+
+<li>youtube.com / google.com 쿠키만 먼저 삭제</li>
+
+
+
+<li>광고 차단 확장 프로그램 잠시 비활성화</li>
+
+
+
+<li>그래도 반복되면 구글 계정 보안 확인</li>
+</ul>
+
+
+
+<p>한두 가지 방법을 시도했는데도 안 되면 무작정 로그인 버튼만 반복하지 말고, 잠시 시간을 두고 다시 접속해보는 게 오히려 빠를 수 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">유튜브가 더 궁금하시다면</h5>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-spacecatx wp-block-embed-spacecatx"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="DnQ6dZTj1x"><a href="https://spacecatx.me/youtube-premium-lite-price/">유튜브 저렴하게 이용하는 방법? 유튜브 라이트 가격과 프리미엄 차이</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;유튜브 저렴하게 이용하는 방법? 유튜브 라이트 가격과 프리미엄 차이&#8221; &#8212; SpaceCatX" src="https://spacecatx.me/youtube-premium-lite-price/embed/#?secret=DgM65Ah4NY#?secret=DnQ6dZTj1x" data-secret="DnQ6dZTj1x" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<p><a href="https://spacecatx.me/iphone-ipad-youtube-smart-downloads/">아이폰, 아이패드 유튜브에서 갑자기 오프라인 저장되는 이유? 스마트 오프라인 저장 끄는 법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/chromecast-youtube-login-error/">크롬캐스트(스마트 TV) 유튜브 로그인 안됨? 로그인 튕김 해결 방법</a></p>
+
+
+
+<p><a href="https://spacecatx.me/youtube-premium-ads-showing/">유튜브 프리미엄인데도 광고 나와요? 해결 방법 정리</a></p>
+
+
+
+<p><a href="https://spacecatx.me/youtube-search-history-error-fix/">유튜브 기록 검색했는데 ‘문제가 발생했습니다’ 오류 뜰 때 해결법(유튜브 something went wrong)</a></p>
+
+
+
+<p></p>
+
+
+
+<p></p>

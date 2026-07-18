@@ -1,0 +1,258 @@
+
+<h3 class="wp-block-heading"><strong>KB5079473 삭제</strong>는 윈도우11 업데이트가 99%에서 멈추거나 재부팅이 반복될 때 시도해볼 수 있는 임시 해결 방법입니다.</h3>
+
+
+
+<p>아니 진짜… 업데이트 한 번 하려다가 암걸리겠네요</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>99%에서 멈추고, 재부팅하면 또 업데이트,<br>로그인도 안 되고 C드라이브까지 막혀버리면<br>이건 단순 오류가 아니라 업데이트 충돌로 시스템이 꼬인 상태입니다.</p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">결론</h2>
+
+
+
+<p>문제 업데이트(KB5079473)를 삭제하고 자동 업데이트를 일시적으로 차단하면<br>대부분의 반복 오류는 해결됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">적용 대상</h2>
+
+
+
+<p>다음과 같은 증상이 반복된다면 해당 문제일 가능성이 높습니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>업데이트가 94~100%에서 멈추고 재부팅이 반복됨</li>
+
+
+
+<li>OneDrive, Teams, Microsoft 계정 로그인 실패 (0x800704cf)</li>
+
+
+
+<li>C드라이브 접근 거부 발생</li>
+
+
+
+<li>업데이트 설치 실패 후 재시도 루프가 계속됨</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">1단계: KB5079473 강제 삭제</h2>
+
+
+
+<p>설정 메뉴에서 삭제가 되지 않는 경우가 많기 때문에<br>명령어를 이용한 제거가 가장 확실합니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li>작업표시줄 검색에서 <strong>CMD</strong> 입력 후 <strong>관리자 권한으로 실행</strong></li>
+
+
+
+<li>아래 명령어를 입력한 뒤 실행</li>
+</ol>
+
+
+
+<pre class="wp-block-code"><code>wusa /uninstall /kb:5079473</code></pre>
+
+
+
+<ol start="3" class="wp-block-list">
+<li>제거가 완료되면 시스템을 재부팅합니다.</li>
+</ol>
+
+
+
+<p>이 단계에서 정상 상태로 복구되는 경우가 많습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">2단계: 자동 업데이트 차단</h2>
+
+
+
+<p>문제 업데이트가 다시 설치되는 것을 막기 위해<br>일시적으로 Windows Update 서비스를 중지합니다.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Win + R</strong> 키를 누른 뒤 <code>services.msc</code> 입력</li>
+
+
+
+<li><strong>Windows Update</strong> 항목 선택</li>
+
+
+
+<li><strong>시작 유형</strong>을 <strong>사용 안 함</strong>으로 변경</li>
+
+
+
+<li><strong>중지</strong> 클릭 후 <strong>확인</strong></li>
+</ol>
+
+
+
+<p>문제가 해결된 이후에는 다시 자동으로 변경하는 것을 권장합니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">3단계: 추가 업데이트 수동 설치</h2>
+
+
+
+<p>해당 오류와 관련된 업데이트가 별도로 배포된 상태입니다.<br>자동 업데이트에 반영되지 않는 경우 직접 설치가 더 빠를 수 있습니다.</p>
+
+
+
+<p><strong>👉 <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5085516" target="_blank" rel="noreferrer noopener">공식 MS 업데이트 카탈로그에서 KB5085516 다운로드</a></strong></p>
+
+
+
+<p>사용 중인 시스템 버전에 맞는 파일(x64 등)을 선택해 설치하면 됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">추가 안내</h2>
+
+
+
+<p>위 방법으로도 해결되지 않는다면 윈도우 업데이트 구성 자체가 손상되었을 가능성이 있습니다.</p>
+
+
+
+<p>이 경우에는 다음 단계로 진행해야 합니다.</p>
+
+
+
+<ul class="wp-block-list">
+<li>C드라이브 접근 거부 해결 방법</li>
+
+
+
+<li>99% 멈춤 및 0x80070306 오류 해결 방법</li>
+
+
+
+<li>파일 유지 상태에서 윈도우 복구 (인플레이스 설치)</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">주의사항</h2>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>업데이트 오류로 시스템이 불안정한 상태일 수 있으므로<br>중요한 데이터는 사전에 백업해두는 것을 권장합니다.</p>
+</blockquote>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">정리</h2>
+
+
+
+<ul class="wp-block-list">
+<li><strong>KB5079473 제거</strong> → 1차 해결</li>
+
+
+
+<li><strong>자동 업데이트 차단</strong> → 재발 방지</li>
+
+
+
+<li><strong>추가 업데이트 수동 설치</strong> → 보완 조치</li>
+</ul>
+
+
+
+<p>대부분의 경우 위 단계에서 정상화됩니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">한 줄 요약</h2>
+
+
+
+<p>문제는 시스템 자체가 아니라 업데이트 충돌이며,<br>삭제와 차단만으로 해결되는 경우가 많습니다.</p>
+
+
+
+<p>혹시 모를 상황에 대비해 <strong>중요 데이터는 반드시 외장 SSD나 클라우드에 백업</strong>해두세요. 요즘은 속도 빠른 NVMe 외장 하드가 필수가 됐네요.</p>
+
+
+
+<p><strong><a href="https://link.coupang.com/a/ea1aH8" target="_blank" rel="noopener">👉 쿠팡 삼성전자 포터블 외장 SSD T7 쉴드 USB 3.2</a></strong></p>
+
+
+
+<a href="https://link.coupang.com/a/ea1dcN" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img4a.coupangcdn.com/image/affiliate/banner/6c544c15c01c27961a4ab484eec80302@2x.jpg" alt="삼성전자 포터블 외장 SSD T7 쉴드 USB 3.2, 블랙, 2TB" width="120" height="240"></a>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://link.coupang.com/a/ea1gqL" target="_blank" rel="noopener"><strong><strong>👉</strong></strong> <strong>씨게이트 One Touch HDD 외장하드STKY1000401&nbsp;</strong></a></p>
+
+
+
+<a href="https://link.coupang.com/a/ea1g76" target="_blank" referrerpolicy="unsafe-url" rel="noopener"><img decoding="async" src="https://img2a.coupangcdn.com/image/affiliate/banner/09a8509fcba1979f895edcc980ee90c4@2x.jpg" alt="씨게이트 One Touch HDD 외장하드STKY1000401 데이터복구+암호화 기능+파우치+USB케이블, 1TB, 실버" width="120" height="240"></a>
+
+
+
+<p>&#8220;이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
