@@ -1,0 +1,404 @@
+
+<h2 class="wp-block-heading">챗GPT로 만든 이미지 수정하는 법, 이제 너무 간단해졌어요. </h2>
+
+
+
+<p>저는 요즘 블로그 썸네일이나 SNS용 이미지를 거의 다 챗GPT로 만들어 쓰고 있어요. 프롬프트 몇 줄 쓰면 알아서 그럴듯하게 뽑아주니까, 디자인 툴을 켜고 하나하나 만드는 것보다 훨씬 빠르고 편하더라고요.</p>
+
+
+
+<p>그런데 잘 쓰면서도 막상 불편한 점이 있었어요. 꼭 텍스트 하나가 오타 나거나, 오브젝트 위치가 애매하거나, 색감이 살짝 튀는 부분이 생기는 거예요.</p>
+
+
+
+<p>이럴 때마다 챗GPT에게 다시 수정해달라고 부탁했는데, 웃긴 게 하나를 고치면 다른 쪽이 망가져 버리는 거죠. 썸네일 하나를 붙잡고 두 시간을 매달린 적도 있어요. 그냥 포토샵을 켰다면 5분이면 끝났을 것을… 제가 챗GPT를 너무 믿었어요.</p>
+
+
+
+<h3 class="wp-block-heading">그러다 지난 6월, 챗GPT에서 만든 이미지를 캔바로 바로 넘겨 원하는 부분만 수정할 수 있는 기능이 추가되면서 이 답답함이 많이 풀렸어요.</h3>
+
+
+
+<p>캔바에서는 Magic Layers를 평면 이미지나 정적인 AI 결과물을 캔바 에디터 안에서 편집 가능한 다층 레이어 디자인으로 바꿔주는 기술이라고 소개하고 있어요.</p>
+
+
+
+<p>이 기능은 2026년 3월 미국, 영국, 캐나다, 호주에서 먼저 퍼블릭 베타로 공개됐고, 이후 챗GPT와 Gemini에서도 사용할 수 있게 되면서 AI 어시스턴트에서 만든 이미지를 바로 편집 가능한 캔바 디자인으로 변환할 수 있게 됐어요.</p>
+
+
+
+<p><a href="https://www.canva.com/ko_kr/magic-layers/" target="_blank" rel="noreferrer noopener">캔바 Magic Layers 공식 소개 보기 →</a></p>
+
+
+
+<p>제가 직접 사용해보면서 어디까지 잘 되고, 어느 부분에서 한계가 있었는지 정리해봤어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">챗GPT 이미지, 캔바에서는 이렇게 수정할 수 있어요!</h2>
+
+
+
+<p>챗GPT로 만든 이미지를 캔바로 넘기면, 한 장으로 합쳐져 있던 이미지 속 텍스트와 주요 요소가 각각 선택 가능한 형태로 분리돼요.</p>
+
+
+
+<p>문구를 직접 고치거나 소품 위치를 옮길 수 있고, 마음에 들지 않는 요소를 삭제한 뒤 다른 이미지로 바꾸는 것도 가능해요.</p>
+
+
+
+<p>제가 직접 사용해보니 텍스트 수정, 요소 이동과 삭제, 투명 PNG 삽입은 어렵지 않았어요. 다만 AI에게 색상이나 오브젝트를 다시 생성하도록 맡기면 주변 이미지까지 달라질 수 있었어요.</p>
+
+
+
+<p>이미지를 컴퓨터에 따로 저장한 다음 캔바를 다시 열어 업로드할 필요 없이, 챗GPT에서 캔바로 바로 연결된다는 점도 편했어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">챗GPT와 캔바 연결 전 준비사항</h2>
+
+
+
+<p>먼저 캔바 계정이 있어야 해요.</p>
+
+
+
+<p>그리고 챗GPT에서 캔바를 사용할 수 있도록 미리 계정을 연결해둬야 합니다.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="821" height="1024" src="https://spacecatx.me/wp-content/uploads/2026/07/image-12-821x1024.png" alt="ChatGpt&gt;플러그인" class="wp-image-2197" style="aspect-ratio:0.801762114537445" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-12-821x1024.png 821w, https://spacecatx.me/wp-content/uploads/2026/07/image-12-241x300.png 241w, https://spacecatx.me/wp-content/uploads/2026/07/image-12-768x958.png 768w, https://spacecatx.me/wp-content/uploads/2026/07/image-12-1231x1536.png 1231w, https://spacecatx.me/wp-content/uploads/2026/07/image-12.png 1472w" sizes="(max-width: 821px) 100vw, 821px" /></figure>
+
+
+
+<pre class="wp-block-code"><code>왼쪽 메뉴 &gt; 앱 &gt; Creativity &gt; Canva의 + 버튼 클릭</code></pre>
+
+
+
+<p>이 순서로 들어간 다음 캔바 계정 로그인까지 마쳐주면 돼요. 별도 프로그램을 설치할 필요는 없고, 챗GPT와 캔바 계정만 연결돼 있으면 바로 시작할 수 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">챗GPT 이미지를 캔바에서 수정하는 방법</h2>
+
+
+
+<h3 class="wp-block-heading">1. 챗GPT에서 이미지부터 만들기</h3>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="773" src="https://spacecatx.me/wp-content/uploads/2026/07/image-13.png" alt="스텔라의 홈케어 타입 SNS용 이미지" class="wp-image-2198" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-13.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-13-300x300.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/image-13-150x150.png 150w, https://spacecatx.me/wp-content/uploads/2026/07/image-13-768x768.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<p>먼저 챗GPT에서 원하는 이미지를 만들어주세요. 챗GPT에서 생성한 원본 이미지. 마스크팩을 붙인 고양이 캐릭터가 주인공인 화장품 홍보용 SNS 이미지예요.</p>
+
+
+
+<p>전체적인 분위기는 마음에 들었지만, 제목 텍스트와 하단 화장품 이미지는 바꾸고 싶었어요.</p>
+
+
+
+<h3 class="wp-block-heading">2. 캔바에서 수정할 수 있게 바꿔달라고 요청하기</h3>
+
+
+
+<p>이미지를 만든 채팅창에서 챗GPT에게 아래와 같이 요청해주세요.</p>
+
+
+
+<pre class="wp-block-code"><code>이 이미지를 편집 가능한 @Canva 디자인으로 바꿔줘</code></pre>
+
+
+
+<p>캔바 연결이 되어 있다면 잠시 후 디자인 미리보기와 함께 <code>Customize this design</code> 버튼이 나타나요.</p>
+
+
+
+<h3 class="wp-block-heading">3. 캔바 편집기로 이동하기</h3>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="756" src="https://spacecatx.me/wp-content/uploads/2026/07/image-14.png" alt="챗지피티에게 캔바디자인으로 바꿔달라고 하세요." class="wp-image-2199" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-14.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-14-300x293.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/image-14-768x751.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<p><code>Customize this design</code> 버튼을 눌러주세요.</p>
+
+
+
+<p>방금 만든 이미지가 캔바 편집 화면으로 바로 열려요.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">4. 분리된 레이어 확인하기</h3>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="892" src="https://spacecatx.me/wp-content/uploads/2026/07/image-15.png" alt="캔바의 매직레이어" class="wp-image-2200" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-15.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-15-260x300.png 260w, https://spacecatx.me/wp-content/uploads/2026/07/image-15-768x886.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<p>제목 텍스트, 고양이 캐릭터, 마스크팩, 하단 화장품이 각각 개별 요소로 나뉜 모습이에요.</p>
+
+
+
+<p>캔바 화면에서 이미지 속 요소를 하나씩 눌러보면 제목 텍스트, 고양이, 마스크팩, 하단 화장품이 각각 따로 선택되는 것을 확인할 수 있어요.</p>
+
+
+
+<h3 class="wp-block-heading">5. 제목 텍스트 수정하기</h3>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="428" src="https://spacecatx.me/wp-content/uploads/2026/07/image-16.png" alt="캔바의 매직레이어 기능을 활용해 텍스트 수정" class="wp-image-2201" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-16.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-16-300x166.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/image-16-768x425.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<p>바꾸고 싶은 제목을 클릭하면 일반 캔바 텍스트처럼 내용을 수정할 수 있어요.</p>
+
+
+
+<p>원래 문구였던 <strong>“촉촉한 보습으로 피부 컨디션 충전”</strong>을 <strong>“산뜻한 수분 케어로 피부 컨디션 충전”</strong>으로 바꿔봤어요.</p>
+
+
+
+<p>문구뿐 아니라 글자 크기, 색상, 위치도 함께 조정할 수 있습니다.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">6. 하단 화장품 이미지를 다른 이미지로 바꾸기</h3>
+
+
+
+<p>먼저 기존 화장품 요소를 클릭해 삭제해주세요.</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="418" src="https://spacecatx.me/wp-content/uploads/2026/07/image-17.png" alt="캔바 이미지파일 업로드 하는 법" class="wp-image-2202" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-17.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-17-300x162.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/image-17-768x415.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<pre class="wp-block-code"><code>캔바 왼쪽 메뉴 &gt; 업로드 &gt; 파일 업로드</code></pre>
+
+
+
+<p>이 순서로 새로 넣고 싶은 이미지를 불러온 다음, 업로드한 이미지를 클릭해 캔버스에 추가해주세요.</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="940" src="https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입-1024x940.png" alt="" class="wp-image-2204" srcset="https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입-1024x940.png 1024w, https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입-300x275.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입-768x705.png 768w, https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입-1536x1410.png 1536w, https://spacecatx.me/wp-content/uploads/2026/07/이미지삽입.png 1879w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>저는 투명 배경으로 만든 향수병과 장미 이미지를 업로드한 뒤, 원래 화장품이 있던 자리에 크기와 위치를 맞춰 배치했어요.</p>
+
+
+
+<p></p>
+
+
+
+<h3 class="wp-block-heading">7. 완성된 이미지 저장하기</h3>
+
+
+
+<pre class="wp-block-code"><code>오른쪽 상단 공유 버튼 &gt; 다운로드</code></pre>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="773" height="704" src="https://spacecatx.me/wp-content/uploads/2026/07/image-18.png" alt="캔바 이미지 저장하는 법" class="wp-image-2203" srcset="https://spacecatx.me/wp-content/uploads/2026/07/image-18.png 773w, https://spacecatx.me/wp-content/uploads/2026/07/image-18-300x273.png 300w, https://spacecatx.me/wp-content/uploads/2026/07/image-18-768x699.png 768w" sizes="(max-width: 773px) 100vw, 773px" /></figure>
+
+
+
+<p>저는 별도의 설정을 바꾸지 않아도 PNG 형식으로 저장됐어요. 블로그 썸네일이나 SNS 이미지로 사용하기에는 충분했어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">캔바 Magic Layers 사용 시 주의할 점</h2>
+
+
+
+<h3 class="wp-block-heading">독특한 폰트는 완벽하게 재현되기 어려워요</h3>
+
+
+
+<p>텍스트는 직접 수정할 수 있지만, 원본 이미지에 사용된 글꼴이 캔바에 없다면 똑같이 재현되기는 어려워요.</p>
+
+
+
+<p>비슷한 폰트로 대체되면서 글자 모양이나 폭, 줄바꿈이 달라질 수 있습니다.</p>
+
+
+
+<h3 class="wp-block-heading">AI 수정 기능은 반만 믿으세요</h3>
+
+
+
+<p>캔바에서 요소를 직접 옮기거나 지우는 작업은 어렵지 않았어요.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="979" height="1024" src="https://spacecatx.me/wp-content/uploads/2026/07/망한사례1-979x1024.png" alt="" class="wp-image-2206" srcset="https://spacecatx.me/wp-content/uploads/2026/07/망한사례1-979x1024.png 979w, https://spacecatx.me/wp-content/uploads/2026/07/망한사례1-287x300.png 287w, https://spacecatx.me/wp-content/uploads/2026/07/망한사례1-768x803.png 768w, https://spacecatx.me/wp-content/uploads/2026/07/망한사례1.png 1195w" sizes="(max-width: 979px) 100vw, 979px" /></figure>
+
+
+
+<p>하지만 AI에게 “이 부분만 바꿔줘”라고 요청했을 때는 결과가 다소 불안정했어요. 마스크팩 색상만 바꿔달라고 요청했지만 고양이 얼굴 전체가 함께 바뀐 결과예요.</p>
+
+
+
+<p>고양이의 마스크팩 색상만 분홍색으로 바꿔달라고 했더니, 팩만 바뀐 것이 아니라 고양이 얼굴까지 통째로 다시 생성됐어요. 하단 화장품을 교체하는 과정에서 엉뚱하게 작은 고양이가 추가된 결과예요. 원하는 제품 대신 커다란 비누처럼 생긴 오브젝트가 생성된 결과예요.</p>
+
+
+
+<p>하단 화장품을 다른 제품으로 바꿔달라고 했을 때도 원하는 제품 대신 고양이가 하나 더 생기거나, 커다란 비누처럼 생긴 엉뚱한 오브젝트가 들어갔어요. AI 교체 기능 대신 직접 만든 투명 PNG를 삽입해 완성한 최종 이미지예요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">캔바 Magic Layers를 직접 사용해본 후기</h2>
+
+
+
+<p>세밀한 부분까지 원하는 대로 고치기에는 아직 한계가 있었어요.</p>
+
+
+
+<p>그래도 텍스트 수정, 요소 이동과 삭제, 원하는 이미지 새로 넣기 정도는 캔바에서 어렵지 않게 할 수 있었어요.</p>
+
+
+
+<p>특히 챗GPT에서 이미지를 다시 저장한 뒤 캔바에 업로드하는 과정 없이, 바로 편집 가능한 디자인으로 연결된다는 점이 가장 편했습니다.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">FAQ</h2>
+
+
+
+<h3 class="wp-block-heading">Q. 챗GPT에서 만든 모든 이미지가 레이어로 분리되나요?</h3>
+
+
+
+<p>이미지 구조에 따라 분리되는 정도는 달라질 수 있어요. 배경과 텍스트, 주요 요소가 명확하게 구분될수록 편집하기 좋은 형태로 분리될 가능성이 높아요.</p>
+
+
+
+<h3 class="wp-block-heading">Q. 캔바 무료 계정에서도 사용할 수 있나요?</h3>
+
+
+
+<p>사용할 수 있어요. 다만 횟수 제한이 있습니다.</p>
+
+
+
+<p>Magic Layers는 Premium AI 도구라서 사용할 때마다 월간 AI 사용량에서 차감되고, 2026년 7월 기준 캔바 무료 요금제에서는 Premium AI 기능을 월 20회까지 사용할 수 있어요.</p>
+
+
+
+<h3 class="wp-block-heading">Q. 포토샵 없이도 충분한가요?</h3>
+
+
+
+<p>문구 수정, 요소 이동과 삭제, PNG 교체 같은 간단한 편집은 캔바가 훨씬 편했어요.</p>
+
+
+
+<p>챗GPT로 만든 이미지는 보통 모든 요소가 한 장의 이미지로 합쳐져 있기 때문에, 포토샵에서 수정하려면 텍스트와 오브젝트를 각각 분리하고 빈 배경까지 다시 손봐야 해서 오히려 번거로울 수 있거든요.</p>
+
+
+
+<p>다만 전체적인 분위기를 바꾸거나 배경을 통째로 새로 만드는 것처럼 수정 범위가 크다면, 포토샵의 생성형 AI 기능이 아직은 한 수 위라고 느꼈어요.</p>
+
+
+
+<p>캔바는 기존 이미지에서 <strong>있는 요소를 다듬는 작업</strong>에는 강하지만, 이미지 전체를 <strong>완전히 새로 만드는 작업</strong>에는 아직 한계가 있었어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">챗GPT로 만든 이미지 수정하는 법 마치며</h2>
+
+
+
+<p>저는 챗GPT로 만든 이미지에서 아쉬웠던 부분을 캔바로 넘겨 해결했어요.</p>
+
+
+
+<p>챗GPT 이미지가 전체적으로는 마음에 드는데 일부 텍스트나 오브젝트만 아쉽다면, 처음부터 다시 생성하기보다는 캔바 Magic Layers로 넘겨 수정해보세요.</p>
+
+
+
+<p>텍스트를 고치고, 필요 없는 요소를 지우고, 원하는 PNG 이미지를 새로 넣는 정도라면 생각보다 훨씬 간단하게 마무리할 수 있어요.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h5 class="wp-block-heading">더 궁금하신 것이 있으시다면 </h5>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-spacecatx wp-block-embed-spacecatx"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="nBueTvE0VP"><a href="https://spacecatx.me/canva-to-miricanvas/">캔바 미리캔버스 옮기기, 가능한 파일 형식과 현실적인 방법</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;캔바 미리캔버스 옮기기, 가능한 파일 형식과 현실적인 방법&#8221; &#8212; SpaceCatX" src="https://spacecatx.me/canva-to-miricanvas/embed/#?secret=Ztyd66nZxB#?secret=nBueTvE0VP" data-secret="nBueTvE0VP" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<p><a href="https://spacecatx.me/miricanvas-save-fail-page-freeze-500-error/">미리캔버스 저장 안됨, 멈춤·500 오류까지 한 번에 정리(2026)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/iphone-hwp-file-open/">아이폰 HWP 파일 여는 법, 광고 없이 빨리 보는 방법(2026.07)</a></p>
+
+
+
+<p><a href="https://spacecatx.me/figma-starter-plan-work-range/">피그마 무료 플랜(Starter), 어디까지 쓸 수 있나? 현실 작업 범위 정리</a></p>
+
+
+
+<p><a href="https://spacecatx.me/figma-student-education-plan-free-guide/">피그마 학생은 무슨 플랜 써야 할까? 무료 교육 플랜 신청 방법 정리(2026)</a></p>
+
+
+
+<p></p>
