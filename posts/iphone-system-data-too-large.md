@@ -2,7 +2,7 @@
 
 - URL: https://spacecatx.me/iphone-system-data-too-large/
 - Published: 2026-07-11T08:05:00
-- Modified: 2026-07-09T08:38:41
+- Modified: 2026-07-26T19:14:53
 
 ---
 
@@ -37,6 +37,8 @@
 위험도 낮은 것부터, 마지막 수단 순서로 정리했어요.
 
 ### 1. 저장공간에서 시스템 데이터 크기 확인하기
+
+![아이폰 저장공간 확인](https://spacecatx.me/wp-content/uploads/2026/07/image-23-922x1024.png)
 
 ```
 설정 > 일반 > iPhone 저장 공간

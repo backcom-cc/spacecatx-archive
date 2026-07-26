@@ -2,11 +2,13 @@
 
 - URL: https://spacecatx.me/instagram-story-connection-waiting/
 - Published: 2026-06-26T08:01:00
-- Modified: 2026-06-24T22:41:56
+- Modified: 2026-07-26T19:12:12
 
 ---
 
 ## 영원한 인스타 스토리 연결 대기중의 시간..
+
+![인스타 스토리 업로드 연결 대기중인 상태.](https://spacecatx.me/wp-content/uploads/2026/06/3684e43b-8196-4c94-8922-3acfcbb5ea62-819x1024.png)
 
 그저께 밤부터 저는 강제로 인스타를 못 하고 있습니다.
 
@@ -86,11 +88,15 @@ VPN 켜둔 채로 스토리 올리면 중간에 멈출 수 있어요. 피드나 
 
 아이폰이라면 아래 경로에서 확인해 보세요.
 
+![아이폰 저장공간에서 인스타그램 확인](https://spacecatx.me/wp-content/uploads/2026/06/f32fac97-3ff1-4169-8aac-d9eca263d921-1024x768.png)
+
 ```
 설정 > 일반 > iPhone 저장 공간
 ```
 
 갤럭시라면 아래 경로에서 확인해 보세요.
+
+![갤럭시 저장공간에서 인스타그램 확인](https://spacecatx.me/wp-content/uploads/2026/06/4cf0c44b-dc99-4247-9452-3aec2f56bfc3-1024x768.png)
 
 ```
 설정 > 디바이스 케어 > 저장공간
@@ -103,6 +109,9 @@ VPN 켜둔 채로 스토리 올리면 중간에 멈출 수 있어요. 피드나 
 ## 갤럭시라면 인스타 캐시를 삭제해 보세요
 
 갤럭시라면 인스타 앱 캐시를 삭제해 보는 것도 방법입니다.
+
+![갤럭시 인스타 캐시 삭제
+](https://spacecatx.me/wp-content/uploads/2026/06/15caf734-5223-465f-87ea-7977e697a803-1024x683.png)
 
 ```
 설정 > 애플리케이션 > Instagram > 저장공간 > 캐시 삭제
