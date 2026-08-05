@@ -2,7 +2,7 @@
 
 - URL: https://spacecatx.me/switch2-wake-controller-list-2026/
 - Published: 2026-03-13T21:17:13
-- Modified: 2026-07-27T22:16:49
+- Modified: 2026-08-05T22:12:10
 
 ---
 
@@ -64,7 +64,7 @@
 ## 1. 닌텐도 스위치2 프로 컨트롤러
 
 [![닌텐도 스위치2 프로 컨트롤러
-](https://spacecatx.me/wp-content/uploads/2026/03/image-1-1024x798.png)](https://link.coupang.com/a/d3zQOK)
+](https://spacecatx.me/wp-content/uploads/2026/03/image-1-1024x798.png)](https://link.coupang.com/a/d3zJA9)
 
 **[👉 쿠팡 닌텐도 해외 직구보기 (10만원 대)](https://link.coupang.com/a/d3zJA9)**
 
@@ -116,9 +116,9 @@
 
 ## 2. 8BitDo Ultimate Bluetooth2
 
-[![팔얼블2 화이트](https://spacecatx.me/wp-content/uploads/2026/03/image-2.png)](https://link.coupang.com/a/d3zXYg)
+[![팔얼블2 화이트](https://spacecatx.me/wp-content/uploads/2026/03/image-2.png)](https://link.coupang.com/a/fYcyEAOHCu)
 
-**👉[쿠팡 로켓직구 가격 확인 (4만원 중후반)](https://link.coupang.com/a/d3zXYg)**
+**👉[쿠팡 로켓직구 가격 확인 (4~5만원대)](https://link.coupang.com/a/fYcyEAOHCu)**
 
 미니멀한 디자인과 **미친 가성비로 사랑받아온 8BitDo Ultimate 시리즈**입니다.  
 이번에는 **닌텐도 스위치 2 대응 버전으로 다시 돌아왔습니다.** 여전히 이 가격에 충전독까지 줍니다!
@@ -170,8 +170,6 @@ PC에 물려서 복잡하게 설정하지 않아도, 지원 범위 안에서는 
 
 아미보 인식 기능은 들어가지 않았습니다.  
 젤다, 동물의 숲처럼 아미보를 자주 쓰는 분이라면 이 점은 분명히 아쉽습니다.
-
-[![8BitDo 얼티메이트 2세대 3모드 컨트롤러 게임패드 NS버전, 화이트, 1개](https://img3c.coupangcdn.com/image/affiliate/banner/cd8de798f79cf301cd06505927592521@2x.jpg)](https://link.coupang.com/a/d3z2T4)
 
 ---
 
