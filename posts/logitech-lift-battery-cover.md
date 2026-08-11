@@ -2,7 +2,7 @@
 
 - URL: https://spacecatx.me/logitech-lift-battery-cover/
 - Published: 2026-08-10T08:23:00
-- Modified: 2026-08-07T23:11:41
+- Modified: 2026-08-11T23:36:08
 
 ---
 
@@ -49,7 +49,8 @@
 
 여기까지만 했으면 그냥 “아, 안 파는구나” 하고 끝났을 텐데요. 문제는 그다음이었어요.
 
-![로지텍 AS 답변](https://spacecatx.me/wp-content/uploads/2026/08/5.png)
+![로지텍 상담내역.
+](https://spacecatx.me/wp-content/uploads/2026/08/3-1.png)
 
 ![로지텍 AS 답변](https://spacecatx.me/wp-content/uploads/2026/08/6.png)
 
