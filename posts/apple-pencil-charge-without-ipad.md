@@ -2,9 +2,11 @@
 
 - URL: https://spacecatx.me/apple-pencil-charge-without-ipad/
 - Published: 2026-04-29T20:50:00
-- Modified: 2026-04-26T17:52:39
+- Modified: 2026-11-06T10:20:39
 
 ---
+
+이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
 
 ## 애플펜슬 아이패드 없이 충전 가능할까? 꼭 아이패드에 붙여야만 충전되나요?
 
